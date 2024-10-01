@@ -58,7 +58,7 @@ const Formation = ({ params }: { params: { link: string } }) => {
                             <div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3'>
                                 {
                                     formation?.formation.map((element) => (
-                                        <div className='relative p-4 border overflow-hidden'>
+                                        <div key={element.titre} className='relative p-4 border overflow-hidden'>
                                             <img src="/utils/choose3.png" alt="" className='absolute -bottom-4 -right-4 h-28' />
                                             <img src="/icons/graduate.png" alt="" className='h-8' />
                                             <h3 className='font-bold font-bricolage'>{element.titre}</h3>

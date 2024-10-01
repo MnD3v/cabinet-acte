@@ -7,7 +7,6 @@ import FixedAppBar from "./components/fixed_app_bar";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Animations from "./components/utils/item";
-import Produits from "./components/produits";
 import PourquoiNous from "./components/pourquoi-nous";
 
 export default function Home() {
