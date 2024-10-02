@@ -33,15 +33,15 @@ const Presentation = () => {
                                     initial="hidden"
                                     whileInView="show"
                                 >
-                                    Agence spécialisée dans la formations des jeunes dans des domaines technologiques et management.
+                                    Cabinet spécialisé dans la formation des jeunes dans des domaines technologiques et en management.
                                 </motion.p>
                                 <motion.a href='#contact'
                                     variants={Animations.scale({ duration: 2.0 })}
                                     initial="hidden"
                                     whileInView="show"
-                                    className="font-poppins text-green-700 hover:text-white 
+                                    className="font-bricolage text-white hover:text-green-900 
                                  px-10 py-3 my-3
-                               bg-white hover:bg-green-900 border-2 border-green-700 hover:ring ring-green-900
+                               bg-green-700 hover:bg-white border-2 border-green-700  rounded-md
                                 self-start
                                 ">Contactez-nous</motion.a>
 

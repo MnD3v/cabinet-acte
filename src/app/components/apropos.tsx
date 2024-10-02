@@ -10,7 +10,14 @@ const APropos = () => {
 
     ]
     return (
-        <section id="a-propos" className='flex  justify-center p-3'>
+        <section id="a-propos" className='flex flex-col  items-center p-3 my-6'>
+            <div className='hidden max-md:flex  items-center space-x-2'>
+                <div className='h-2 w-2 bg-green-700'></div>
+
+                <p className='text-green-700 uppercase font-bricolage font-bold'>A propos de nous</p>
+                <div className='h-2 w-2 bg-green-700'></div>
+
+            </div>
             <div className='max flex flex-wrap gap-3'>
                 <motion.img src="/entreprise.jpg" alt=""
 
@@ -19,10 +26,10 @@ const APropos = () => {
                     whileInView="show"
                     className='object-cover w-full h-[260px] sm:h-[400px] lg:w-[50%] lg:h-auto' />
                 <div className='w-full lg:w-[400px] xl:w-[600px]'>
-                    <div className='flex items-center space-x-2'>
+                    <div className='max-md:hidden flex items-center space-x-2'>
                         <div className='h-2 w-2 bg-green-700'></div>
 
-                        <p className='text-green-700 uppercase font-poppins font-bold'>A propos de nous</p>
+                        <p className='text-green-700 uppercase font-bricolage font-bold'>A propos de nous</p>
                         <div className='h-2 w-2 bg-green-700'></div>
 
                     </div>
@@ -31,8 +38,8 @@ const APropos = () => {
                     '>
                         Nous sommes un agence offrant des formations aux jeunes sur le territoire Togolais.  Des clients nous font confiance depuis 2014
                     </h1>
-                    <h3 className='text-green-700 text-2xl font-bricolage'>
-                        Atouts</h3>
+                    <div className='flex items-center'> <img src="/icons/star.png" alt="" className='h-10' /> <h3 className='font-jost italic text-green-700 text-2xl'>
+                        Ce Qui Nous Distingue</h3></div>
                     <div className='flex flex-wrap'>
 
                         {
@@ -50,8 +57,8 @@ const APropos = () => {
                                     <div className='h-16 w-16 rounded-full bg-green-100 flex items-center justify-center'>
                                         <img src={"/icons/" + element.icon} alt="" className='h-9' />
                                     </div>
-                                    <div className='w-full sm:w-52'>
-                                        <p className='text-green-700 font-jost text-xl font-semibold'>{element.description.split(':')[0]} </p>
+                                    <div className='w-[80%] sm:w-52'>
+                                        <p className='text-green-900 font-jost text-xl font-semibold'>{element.description.split(':')[0]} </p>
                                         <p>{element.description.split(':')[1]}</p>
                                     </div >
 

@@ -67,8 +67,7 @@ const AppBar = () => {
                         <ul className="max flex uppercase">
                             <li className="hover:text-green-600 font-semibold border-l-[1px] border-white/30 pl-9 py-3"><a href={inNotHome ? "/" : "#"}>Accueil</a></li>
                             <li className="hover:text-green-600 font-semibold border-l-[1px] border-white/30 pl-9 py-3"><a href={inNotHome ? "/" : "#formations"}>Services</a></li>
-                            <li className="hover:text-green-600 font-semibold border-l-[1px] border-white/30 pl-9 py-3"><a href={inNotHome ? "/" : "#produits"}>Nos produits</a></li>
-
+                         
                             <li className="hover:text-green-600 font-semibold border-l-[1px] border-white/30 pl-9 py-3"><a href={inNotHome ? "/" : "#a-propos"}>A Propos</a></li>
                             <li className="hover:text-green-600 font-semibold border-l-[1px] border-white/30 pl-9 py-3"><a href={inNotHome ? "/" : "#contact"}>Contact</a></li>
                         </ul>
@@ -103,18 +102,17 @@ const MobileAppBar = ({ menuRef, menuIsOpen, inNotHome }: { menuRef: React.RefOb
             <img src="/logo.png" alt="" className="self-center h-24" />
 
             <ul className={`flex flex-col items-center justify-center  uppercase`}>
-                <li className=" hover:text-green-600 font-semibold px-6 py-3 "><a href={inNotHome ? "/" : "#"}>Accueil</a></li>
+                <li className=" hover:text-green-600  px-6 py-3 "><a href={inNotHome ? "/" : "#"}>Accueil</a></li>
                 <div className='h-px w-36 bg-green-700'></div>
-                <li className=" hover:text-green-600 font-semibold px-6 py-3 "><a href={inNotHome ? "/" : "#formations"}>SERVICES</a></li>
-                <div className='h-px w-36 bg-green-700'></div>
-
-                <li className=" hover:text-green-600 font-semibold  px-9 py-3 "><a href={inNotHome ? "/" : "#produits"}>Nos produits</a></li>
+                <li className=" hover:text-green-600  px-6 py-3 "><a href={inNotHome ? "/" : "#formations"}>Formations</a></li>
                 <div className='h-px w-36 bg-green-700'></div>
 
-                <li className=" hover:text-green-600 font-semibold px-6 py-3 "><a href={inNotHome ? "/" : "#a-propos"}>A Propos</a></li>
+
+
+                <li className=" hover:text-green-600  px-6 py-3 "><a href={inNotHome ? "/" : "#a-propos"}>A Propos</a></li>
                 <div className='h-px w-36 bg-green-700'></div>
 
-                <li className=" hover:text-green-600 font-semibold px-6 py-3 "><a href={inNotHome ? "/" : "#contact"}>Contact</a></li>
+                <li className=" hover:text-green-600  px-6 py-3 "><a href={inNotHome ? "/" : "#contact"}>Contact</a></li>
                 <div className='h-px w-36 bg-green-700'></div>
 
             </ul>

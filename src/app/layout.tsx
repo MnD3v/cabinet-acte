@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
@@ -43,9 +43,9 @@ export default function RootLayout({
           {children}
         </GlobalStateProvider>
 
-        <footer className="relative flex justify-center bg-green-950 p-9 pt-9 md:pt-24 text-white overflow-hidden max-sm:text-sm">
+        <footer className="relative flex justify-center bg-[url('/utils/footer.png')] bg-cover p-9 pt-9 md:pt-24 text-white overflow-hidden max-sm:text-sm">
           <div className="absolute bottom-0 right-0 z-0 ">
-            <img src="/utils/feuille-footer.png" alt="" className="h-60 md:h-96" />
+
           </div>
           <div className="relative z-10 max flex flex-wrap justify-center gap-9">
 
@@ -54,7 +54,7 @@ export default function RootLayout({
               <p className="w-80 mt-6">Chez CEMENA-TOGO, des solutions naturelles sur mesure pour améliorer votre bien-être et renforcer votre santé, en combinant tradition et innovation.</p>
 
             </div>
-            <div className="pt-6 w-80 font-poppins">
+            <div className="pt-6 w-80 font-bricolage">
               <h3>
                 Contact
               </h3>

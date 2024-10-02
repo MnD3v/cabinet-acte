@@ -33,7 +33,7 @@ const Formation = ({ params }: { params: { link: string } }) => {
     return (
         <div>
             {
-                isInView && <div className='fixed flex flex-col items-center justify-center bg-blue-950 h-full w-full'>
+                isInView && <div className='fixed flex flex-col items-center justify-center bg-green-800 h-full w-full'>
                     <div className='loader'></div>
                 </div>}
             <motion.div
@@ -41,10 +41,17 @@ const Formation = ({ params }: { params: { link: string } }) => {
                 initial="hidden"
                 whileInView="show"
                 className=''>
-                <div className='bg-blue-950 flex flex-col items-center text-white'>
+                <div
+                    style={{
+                        backgroundImage: "radial-gradient(#22c55e 1px, transparent 0)",
+                        backgroundSize: "20px 20px"
+                    }}
+                    className='flex flex-col items-center'>
                     <AppBar></AppBar>
 
-                    <div className=' justify-center items-center mb-8 md:my-12 mx-2'>
+                    <div
+
+                        className='w-full justify-center items-center pb-8  md:py-12 px-2'>
                         <h1 className='font-jost text-center text-2xl md:text-4xl'> {formation?.domaine} </h1>
 
 

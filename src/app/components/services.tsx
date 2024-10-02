@@ -52,11 +52,11 @@ const Services = () => {
                 <div className='flex items-center space-x-2'>
                     <div className='h-2 w-2 bg-green-700'></div>
 
-                    <p className='text-green-700 uppercase font-poppins font-bold'>NOS FORMATIONS</p>
+                    <p className='text-green-700 uppercase font-bricolage font-bold'>NOS FORMATIONS</p>
                     <div className='h-2 w-2 bg-green-700'></div>
 
                 </div>
-                <p className='font-marcellus text-2xl my-4 mb-6'>Nous offrons des formations dans 5 grands domaines</p>
+                <p className='font-jost italic text-2xl my-4 mb-6'>Nous offrons des formations dans 5 grands domaines</p>
             </div>
 
 
@@ -71,18 +71,18 @@ const Services = () => {
                             key={element.icon} className='p-1'> <div
 
                                 className=' h-full flex flex-col justify-between
-                                border hover:border-green-600 hover:shadow-lg rounded-md
-                                 p-2 md:p-6 
+                                border border-green-400 hover:border-green-600 rounded-md
+                                 p-4 md:p-6 
                                 transition-all duration-200'>
 
                                 <div className='space-y-4'>
-                                    <img src={"/icons/" + element.icon} alt="" className='h-16' />
+                                    <img src={"/icons/" + element.icon} alt="" className='h-12 md:h-16' />
 
                                     <p className='text-xl text-black font-semibold font-bricolage'>{element.titre}</p>
                                     <p className='text-zinc-600'>{element.description}</p>
                                 </div>
-                                <Link href={"/formations/" + element.link} className='text-center text-green-700 hover:text-white w-full px-6 py-4 my-1 
-                                bg-white hover:bg-green-700 rounded-md border border-green-500'>Voir les formations</Link>
+                                <Link href={"/formations/" + element.link} className='text-center font-jost font-bold text-white hover:text-green-700  w-full px-6 py-4 my-1 
+                                bg-green-700 hover:bg-white rounded-md border border-green-500'>Voir les formations</Link>
 
                             </div>
                         </motion.a>

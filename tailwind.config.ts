@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       fontFamily:{
         syne: "Syne",
-        poppins: "Poppins",
+        play: "Playfair Display",
         bricolage: "Bricolage Grotesque",
         jost: "Jost"
       },

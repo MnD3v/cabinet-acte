@@ -13,22 +13,7 @@ const Contact = () => {
         <section id="contact" className='flex flex-col items-center justify-center'>
 
             <div className='flex justify-center'>
-                <div className='max md:flex md:justify-between w-full  bg-red-100 p-6 md:p-16 my-12'>
-                    <div className='font-bricolage w-[43%] max-md:w-full'>
-                        <h1 className='text-3xl md:text-5xl'>
-                            Faites vous accompagner par <span className='text-red-600'>KLM Empire</span>
-                        </h1>
-                        <p className='font-play italic'>Devenez un acteur clé dans des secteurs stratégiques. Que ce soit dans le commerce, l'immobilier, l'import-export, ou l'agriculture, nos solutions vous apportent l'expertise et l'accompagnement nécessaires pour réussir et innover dans des domaines en pleine croissance.</p>
-                    </div>
-                    <div className='w-full md:max-w-[43%]'>
-                        <div className='w-full flex flex-col md:grid md:grid-cols-2 gap-3'>
-                            <input type="text" name="" placeholder='Nom complet' id="" className='px-1 w-full py-3 border-b-[1px] border-zinc-500 bg-transparent ' />
-                            <input type="number" name="" placeholder='Téléphone' id="" className='px-1 w-full py-3 border-b-[1px] border-zinc-500 bg-transparent' />
-                            <textarea name="" placeholder='Votre message' id="" className='md:col-span-2 px-1 w-full py-3 border-b-[1px] border-zinc-500 bg-transparent' />
-                        </div>
-                        <button className='bg-red-600 text-white font-semibold px-8 py-4 my-4'>Envoyer</button>
-                    </div>
-                </div>
+
 
             </div>
             <div className='max-w-[800px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 m-3'>

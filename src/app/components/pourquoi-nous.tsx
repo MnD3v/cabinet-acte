@@ -13,11 +13,10 @@ const PourquoiNous = () => {
         "Un suivi après formation pour garantir une évolution continue et un perfectionnement professionnel."
     ]
     return (
-        <div className="py-6 md:py-12 flex justify-center m-1 md:m-4">
-            <div className='max bg-green-950 bg-cover text-white '>
-                <div className='flex flex-col bg-black/50 p-2 md:p-6'>
-                    <p className='text-green-300 text-lg'>POURQUOI NOUS CHOISIR</p>
-                    <div className='h-9'></div>
+        <div className="text-white py-6 md:py-12 flex justify-center mx-1 my-5 md:m-6 ">
+            <div className='max bg-[url("/utils/footer.png")] bg-cover '>
+                <div className='flex flex-col  p-3 py-6 md:p-6'>
+                    <p className='font-jost font-bold text-green-400 text-xl my-6'>POURQUOI NOUS CHOISIR</p>
                     <p className='font-marcellus text-2xl md:text-4xl'>Nous accompagnons chaque etudiant dans l'acquisition des competances
                     </p>
                     <p>Avec une experience de plus de 7 ans, nous avons pour vision de former des jeunes dans les metiers de l'avenir. L'insertion professionnel de nos jeunes est notre principal but</p>
@@ -41,9 +40,9 @@ const PourquoiNous = () => {
 
                         </div>
 
-                        <motion.img src="/pourquoi.jpg" alt="" className='w-full md:w-[360px] lg:w-[400px] h-[500px] rounded-tl-[90px] rounded-br-[90px]
+                        <motion.img src="/pourquoi.jpeg" alt="" className='w-full md:w-[360px] lg:w-[400px] h-[350px] md:h-[500px] rounded-tl-[90px] rounded-br-[90px]
                         object-cover'
-                            variants={Animations.scale({ duration: 0.5 })}
+                            variants={Animations.bottomToTop({ duration: 0.5, inverse: true })}
                             initial="hidden"
                             whileInView="show"
                         />
