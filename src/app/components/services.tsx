@@ -81,8 +81,8 @@ const Services = () => {
                                     <p className='text-xl text-black font-semibold font-bricolage'>{element.titre}</p>
                                     <p className='text-zinc-600'>{element.description}</p>
                                 </div>
-                                <Link href={"/formations/" + element.link} className='text-center font-jost font-bold text-white hover:text-green-700  w-full px-6 py-4 mt-1 
-                                bg-green-700 hover:bg-white rounded-md border border-green-500'>Voir les formations</Link>
+                                <Link href={"/formations/" + element.link} className='text-center font-jost font-semibold text-green-700 hover:text-green-700  w-full px-6 py-4 mt-1 
+                                bg-green-500/10 hover:bg-white rounded-md border-2 border-green-500'>Voir les formations</Link>
 
                             </div>
                         </motion.a>
