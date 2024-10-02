@@ -37,7 +37,7 @@ const PourquoiNous = () => {
                                         initial="hidden"
                                         whileInView="show"
                                         key={element} className='space-y-3 flex'>
-                                        <img src="/icons/check.png" alt="" className='h-7 m-2' />
+                                        <img src="/utils/diamant.png" alt="" className='h-7 m-2' />
                                         <p className=''>{element}</p>
 
                                     </motion.div>
@@ -46,13 +46,21 @@ const PourquoiNous = () => {
                             }
 
                         </div>
+                        <div className='relative w-full md:w-[500px] lg:w-[700px] h-[350px] md:h-[500px] p-3 my-4'>
+                            <motion.div className='-left-3 -top-3 absolute w-[100px] h-[100px] rounded-tl-[100px] rounded-br-[100px] bg-green-500
+                       '
+                                variants={Animations.leftToRight({ duration: 0.5, inverse: true })}
+                                initial="hidden"
+                                whileInView="show"
+                            />
+                            <motion.img src="/pourquoi.jpeg" alt="" className='relative w-full md:w-[360px] lg:w-[400px] h-[350px] md:h-[500px] rounded-tl-[90px] rounded-br-[90px]
+                        object-cover z-30'
+                                variants={Animations.leftToRight({ duration: 0.5, inverse: true })}
+                                initial="hidden"
+                                whileInView="show"
+                            />
+                        </div>
 
-                        <motion.img src="/pourquoi.jpeg" alt="" className='w-full md:w-[360px] lg:w-[400px] h-[350px] md:h-[500px] rounded-tl-[90px] rounded-br-[90px]
-                        object-cover'
-                            variants={Animations.leftToRight({ duration: 0.5, inverse: true })}
-                            initial="hidden"
-                            whileInView="show"
-                        />
                     </div>
                 </div>
 
