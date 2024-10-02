@@ -4,11 +4,8 @@ import Animations from './utils/item'
 
 const Contact = () => {
 
-    const contacts = [{
-        icon: "chat.png", title: "Ecrivez nous un message", description: `+228 90 90 90 90
-       `, buttonText: "Envoyer un message", link: ""
-    }, { icon: "red-mail.png", title: "Envoyez nous un mail", description: "kingloveempire@gmail.com", buttonText: "Envoyer un mail", link: "" }, { icon: "phone-call.png", title: "Appelez nous", description: "+228 98 98 98 98", buttonText: "+228 90559055", link: "" },
-    { icon: "red-map.png", title: "Adresse ", description: "Kara-Tomdè", buttonText: "+228 90559055", link: "" },]
+    const contacts = [{ icon: "green-message.png", title: "Envoyez nous un mail", description: "cabinetacte@gmail.com", buttonText: "Envoyer un mail", link: "" }, { icon: "green-phone.png", title: "Appelez nous", description: "+228 92 21 75 64", buttonText: "+228 92 21 75 64", link: "" },
+    { icon: "green-map.png", title: "Adresse ", description: "Kara-Tomdè", buttonText: "+228 92 21 75 64", link: "" },]
     return (
         <section id="contact" className='flex flex-col items-center justify-center'>
 
@@ -29,7 +26,7 @@ const Contact = () => {
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: true }}
-                        key={element.icon} className='w-full  rounded-xl flex flex-col p-4 gap-3'>
+                        key={element.icon} className='font-bricolage w-full  rounded-xl flex flex-col p-4 gap-3'>
 
                         <img src={`/icons/${element.icon}`} alt="" className='h-10 md:h-14 self-start' />
 

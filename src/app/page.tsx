@@ -23,8 +23,12 @@ export default function Home() {
   return (
     <div>
       {
-        isInView && <div className='fixed flex flex-col items-center justify-center bg-green-700 h-full w-full'>
-          <div className='loader'></div>
+        isInView && <div className='fixed flex flex-col items-center justify-center bg-white h-full w-full'>
+          <div>
+          </div>
+          <img src="/mini-logo.png" alt="" className="h-14 md:h-24 my-3" />
+          <div className='loader h-9 w-9 md:h-16 md:w-16'></div>
+
         </div>}
       <motion.div
         variants={Animations.opacity({ duration: 0.9 })}

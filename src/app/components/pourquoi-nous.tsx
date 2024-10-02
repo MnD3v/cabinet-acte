@@ -16,13 +16,20 @@ const PourquoiNous = () => {
         <div className="relative text-white py-6 md:py-12 flex justify-center mx-1 my-5 md:m-6 overflow-hidden">
             <div className='max bg-[url("/utils/footer.png")] bg-cover '>
                 <div className='flex flex-col  p-3 py-6 md:p-6'>
-                    <p className='font-jost font-bold text-green-400 text-xl my-6'>POURQUOI NOUS CHOISIR</p>
+
+                    <div className='flex  items-center self-start space-x-2 my-3'>
+                        <div className='h-2 w-2 bg-green-500 '></div>
+
+                        <p className='text-green-500 uppercase font-bricolage font-bold'>POURQUOI NOUS CHOISIR</p>
+                        <div className='h-2 w-2 bg-green-500'></div>
+
+                    </div>
                     <p className='font-marcellus text-2xl md:text-4xl'>Nous accompagnons chaque etudiant dans l'acquisition des competances
                     </p>
                     <p>Avec une experience de plus de 7 ans, nous avons pour vision de former des jeunes dans les metiers de l'avenir. L'insertion professionnel de nos jeunes est notre principal but</p>
                     <div className='h-14'></div>
                     <div className=' flex flex-col md:flex-row gap-2 md:gap-4'>
-                        <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 font-marcellus text-lg'>
+                        <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 font-marcellus'>
                             {
                                 raisons.map((element) => (
                                     <motion.div

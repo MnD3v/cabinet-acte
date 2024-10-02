@@ -50,12 +50,12 @@ export default function RootLayout({
           <div className="relative z-10 max flex flex-wrap justify-center gap-9">
 
             <div>
-              <img src="/logo.png" alt="" className="w-24 md:w-48" />
+              <img src="/logo.png" alt="" className="w-14 md:w-24" />
               <p className="w-80 mt-6">Chez ACTe, nous offrons des formations sur mesure pour améliorer vos compétences et renforcer votre carrière, en alliant tradition et innovation dans des domaines variés.</p>
 
             </div>
             <div className="pt-6 w-80 font-bricolage">
-              <h3>
+              <h3 className="text-lg font-bold">
                 Contact
               </h3>
               <div className="flex items-center">

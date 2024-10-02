@@ -71,7 +71,12 @@ const Services = () => {
                                 transition-all duration-200'>
 
                                 <div className='space-y-4'>
-                                    <img src={"/icons/" + element.icon} alt="" className='h-12 md:h-16' />
+                                    <motion.img src={"/icons/" + element.icon} alt=""
+                                        variants={Animations.scale({ duration: 0.5 })}
+                                        initial="hidden"
+                                        whileInView="show"
+                                        viewport={{ once: true }}
+                                        className='h-12 md:h-16' />
 
                                     <p className='text-xl text-black font-semibold font-bricolage'>{element.titre}</p>
                                     <p className='text-zinc-600'>{element.description}</p>

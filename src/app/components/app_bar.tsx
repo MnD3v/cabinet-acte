@@ -61,19 +61,19 @@ const AppBar = () => {
 
                     </div>
                     <div className='w-full hidden md:flex items-center justify-between '>
-                        <a href={inNotHome ? "/" : "#"}> <img src="/logo.png" alt="" className="h-12 md:h-16" />
+                        <a href={inNotHome ? "/" : "#"}> <img src="/logo.png" alt="" className="h-16 md:h-24" />
                         </a>
 
                         <ul className="max flex uppercase">
                             <li className="hover:text-green-600 font-semibold border-l-[1px] border-white/30 pl-9 py-3"><a href={inNotHome ? "/" : "#"}>Accueil</a></li>
                             <li className="hover:text-green-600 font-semibold border-l-[1px] border-white/30 pl-9 py-3"><a href={inNotHome ? "/" : "#formations"}>Services</a></li>
-                         
+
                             <li className="hover:text-green-600 font-semibold border-l-[1px] border-white/30 pl-9 py-3"><a href={inNotHome ? "/" : "#a-propos"}>A Propos</a></li>
                             <li className="hover:text-green-600 font-semibold border-l-[1px] border-white/30 pl-9 py-3"><a href={inNotHome ? "/" : "#contact"}>Contact</a></li>
                         </ul>
                     </div>
                     <div className='flex w-full justify-between md:hidden items-center'>
-                        <img src="/logo.png" alt="" className="h-12 md:h-16" />
+                        <img src="/logo.png" alt="" className="h-16 md:h-24" />
                         <button
                             onClick={() => {
 
@@ -99,7 +99,7 @@ const MobileAppBar = ({ menuRef, menuIsOpen, inNotHome }: { menuRef: React.RefOb
         animate={{ x: menuIsOpen ? "0" : "-300px", transition: { duration: 0.25 } }}
         className='fixed flex flex-col justify-between bg-white w-[300px] h-full p-6 text-black z-50'>
         <div className='flex flex-col items-center'>
-            <img src="/logo.png" alt="" className="self-center h-24" />
+            <img src="/logo.png" alt="" className="self-center h-20" />
 
             <ul className={`flex flex-col items-center justify-center  uppercase`}>
                 <li className=" hover:text-green-600  px-6 py-3 "><a href={inNotHome ? "/" : "#"}>Accueil</a></li>

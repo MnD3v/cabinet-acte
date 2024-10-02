@@ -52,7 +52,7 @@ const Presentation = () => {
                             </div>
                             <div className='h-px bg-zinc-200 w-full'></div>
                             <div className='flex'>
-                                <img src="/utils/satisfieds.png" alt="" className='h-24' />
+                                <img src="/utils/satisfieds.png" alt="" className='h-16' />
                                 <div className='mx-2'>
                                     <p className='text-2xl'>
                                         670+
