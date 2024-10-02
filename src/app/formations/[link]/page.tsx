@@ -52,20 +52,27 @@ const Formation = ({ params }: { params: { link: string } }) => {
                     <div
 
                         className='w-full justify-center items-center pb-8  md:py-12 px-2'>
-                        <h1 className='font-jost text-center text-2xl md:text-4xl'> {formation?.domaine} </h1>
+                        <h1 className='font-jost uppercase text-center text-2xl md:text-5xl'> {formation?.domaine} </h1>
 
 
                     </div>
 
                 </div>
-                <div className='flex justify-center'>
+                <div className='flex justify-center p-2'>
                     <div className='max'>
-                        <h1 className='font-jost text-green-700 my-4'>Formations</h1>
+                        <div className='hidden max-md:flex  items-center self-start space-x-2 my-3'>
+                            <div className='h-2 w-2 bg-green-700 '></div>
+
+                            <p className='text-green-700 uppercase font-bricolage font-bold'>Formations</p>
+                            <div className='h-2 w-2 bg-green-700'></div>
+
+                        </div>
                         <div className='w-full flex justify-center'>
-                            <div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3'>
+                            <div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6'>
                                 {
                                     formation?.formation.map((element) => (
-                                        <div key={element.titre} className='relative p-4 border overflow-hidden'>
+                                        <div key={element.titre} className='relative p-4 border
+                                        hover:bg-green-200 overflow-hidden'>
                                             <img src="/utils/choose3.png" alt="" className='absolute -bottom-4 -right-4 h-28' />
                                             <img src="/icons/graduate.png" alt="" className='h-8' />
                                             <h3 className='font-bold font-bricolage'>{element.titre}</h3>

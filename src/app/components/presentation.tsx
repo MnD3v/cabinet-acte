@@ -24,7 +24,11 @@ const Presentation = () => {
                                     className="text-4xl md:text-6xl font-semibold
                                     font-jost">Decouvrez le Cabinet  </motion.h1>
 
-                                <motion.h1 className='text-6xl font-jost font-extrabold md:text-8xl text-green-700 flex flex-col'>ACTe <img src="/utils/underline.png" className='w-36 md:w-60 ' alt="" /></motion.h1>
+                                <motion.h1
+                                    variants={Animations.scale({ duration: 0.8 })}
+                                    initial="hidden"
+                                    whileInView="show"
+                                    className='text-6xl font-jost font-extrabold md:text-8xl text-green-700 flex flex-col'>ACTe <img src="/utils/underline.png" className='w-36 md:w-60 ' alt="" /></motion.h1>
 
                             </div>
                             <div className=" max flex flex-col">
@@ -48,7 +52,7 @@ const Presentation = () => {
                             </div>
                             <div className='h-px bg-zinc-200 w-full'></div>
                             <div className='flex'>
-                                <img src="/utils/satisfieds.png" alt="" className='h-12' />
+                                <img src="/utils/satisfieds.png" alt="" className='h-24' />
                                 <div className='mx-2'>
                                     <p className='text-2xl'>
                                         670+

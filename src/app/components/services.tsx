@@ -10,40 +10,35 @@ const Services = () => {
         {
             "icon": "logiciels.png",
             "titre": "Informatique et Logiciel",
-            "description": "Vérification régulière de la tension artérielle pour prévenir les risques d'hypertension.",
+            "description": "Maîtrise des logiciels informatiques et des outils essentiels pour automatiser, organiser et optimiser les tâches numériques.",
             "link": "informatique-et-logiciel"
         },
         {
             "icon": "management.png",
-            "titre": "Management et  Soft Skills",
-            "description": "Suivi de votre taux de sucre dans le sang pour prévenir le diabète.",
+            "titre": "Management et Soft Skills",
+            "description": "Développement des compétences en leadership, communication et gestion d'équipe pour évoluer dans un environnement professionnel.",
             "link": "management-et-soft-skills"
-
         },
         {
             "icon": "multimedia.png",
-            "titre": "Digital-Multimedia et entrepreunariat",
-            "description": "Mesure du cholestérol pour réduire les risques de maladies cardiovasculaires.",
+            "titre": "Digital-Multimédia et Entrepreneuriat",
+            "description": "Apprentissage des outils numériques et des techniques entrepreneuriales pour créer et gérer des projets multimédias innovants.",
             "link": "digital-multimedia-et-entrepreneuriat"
-
         },
         {
             "icon": "administration.png",
             "titre": "Gestion Administrative",
-            "description": "Suivi de votre poids pour maintenir une bonne santé physique et prévenir l'obésité.",
+            "description": "Acquisition des compétences en organisation, gestion des tâches administratives et maîtrise des outils bureautiques.",
             "link": "gestion-administrative"
-
         },
         {
             "icon": "applications.png",
-            "titre": "Developpement d'applications",
-            "description": "Évaluation des facteurs de risque pour prévenir les accidents vasculaires cérébraux.",
+            "titre": "Développement d'applications",
+            "description": "Création d'applications web et mobiles innovantes, de la conception à la mise en production, en utilisant les technologies modernes.",
             "link": "developpement-d-application"
+        }
+    ];
 
-        },
-
-
-    ]
     return (
         <section id="formations" className='my-10 flex flex-col items-center m-2'>
 
@@ -60,7 +55,7 @@ const Services = () => {
             </div>
 
 
-            <div className=' max grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-2'>
+            <div className=' max grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-2'>
                 {
                     formations.map((element) => (
                         <motion.a

@@ -43,7 +43,7 @@ export default function RootLayout({
           {children}
         </GlobalStateProvider>
 
-        <footer className="relative flex justify-center bg-[url('/utils/footer.png')] bg-cover p-9 pt-9 md:pt-24 text-white overflow-hidden max-sm:text-sm">
+        <footer className="relative flex justify-center bg-green-100 bg-cover p-9 pt-9 md:pt-24 overflow-hidden max-sm:text-sm">
           <div className="absolute bottom-0 right-0 z-0 ">
 
           </div>
@@ -51,7 +51,7 @@ export default function RootLayout({
 
             <div>
               <img src="/logo.png" alt="" className="w-24 md:w-48" />
-              <p className="w-80 mt-6">Chez CEMENA-TOGO, des solutions naturelles sur mesure pour améliorer votre bien-être et renforcer votre santé, en combinant tradition et innovation.</p>
+              <p className="w-80 mt-6">Chez ACTe, nous offrons des formations sur mesure pour améliorer vos compétences et renforcer votre carrière, en alliant tradition et innovation dans des domaines variés.</p>
 
             </div>
             <div className="pt-6 w-80 font-bricolage">
@@ -65,7 +65,7 @@ export default function RootLayout({
 
               <div className="flex items-center">
                 <img src="/icons/map.png" alt="" className="h-6 mx-1 " />
-                <p className="p-3">Notre Siège social est dans le quartier SOS, derrière l'église AD Sinaï,sur la route de Ketao,avant le pont.</p>
+                <p className="p-3">Notre Siège social est dans le quartier Tomdè, à environ 50 metres après les affaires sociales.</p>
               </div>
               <div className="my-6 flex gap-2">
                 {socials.map((element) => (

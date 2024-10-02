@@ -11,8 +11,8 @@ const APropos = () => {
     ]
     return (
         <section id="a-propos" className='flex flex-col  items-center p-3 my-6'>
-            <div className='hidden max-md:flex  items-center space-x-2'>
-                <div className='h-2 w-2 bg-green-700'></div>
+            <div className='hidden max-md:flex  items-center self-start space-x-2 my-3'>
+                <div className='h-2 w-2 bg-green-700 '></div>
 
                 <p className='text-green-700 uppercase font-bricolage font-bold'>A propos de nous</p>
                 <div className='h-2 w-2 bg-green-700'></div>
