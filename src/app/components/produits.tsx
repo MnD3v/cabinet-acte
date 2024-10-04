@@ -9,46 +9,71 @@ const Produits = () => {
         {
             "image": "produit-1.png",
             "name": "Sinus",
-            "description": "Remede contre les *sinusites*",
-            "full_description": "Le remède Sinus est conçu pour soulager et guérir les *sinusites* en moins de deux semaines. Grâce à sa formule 100% naturelle, il réduit l'inflammation des sinus, améliore la respiration et élimine les douleurs associées. Ce produit est particulièrement efficace contre les sinusites chroniques et récurrentes, offrant un soulagement rapide dès les premières prises."
+            "description": "Remède contre les *sinusites*",
+            "full_description": "Sinus est un remède naturel conçu pour soulager les symptômes des *sinusites*. En réduisant l'inflammation et en facilitant la respiration, il aide à éliminer les douleurs liées aux *sinusites chroniques* ou aiguës. L'efficacité est notable dès les premières utilisations, avec une amélioration significative après deux semaines de traitement."
         },
         {
-            "image": "produit-1.png",
-            "name": "Hepatus",
-            "description": "Remede contre l'*hepatite B*",
-            "full_description": "Hepatus est un remède puissant qui combat l'*hépatite B* en renforçant les fonctions hépatiques et en éliminant les toxines du foie. Après 30 jours d'utilisation régulière, les symptômes de l'hépatite sont considérablement réduits, avec une amélioration visible des marqueurs de santé hépatique. Son efficacité est prouvée dans la régénération des cellules hépatiques endommagées."
+            "image": "produit-2.png",
+            "name": "SPERMO",
+            "description": "Remède contre *l'infertilité masculine*",
+            "full_description": "SPERMO est un traitement naturel visant à améliorer la *fertilité masculine*. Il stimule la production de *spermatozoïdes* et améliore leur motilité, augmentant ainsi les chances de conception. Un traitement de 30 jours est recommandé pour obtenir des résultats optimaux."
         },
         {
-            "image": "produit-1.png",
-            "name": "Menopus",
-            "description": "Previent la *menopose precoce*",
-            "full_description": "Menopus est un traitement naturel conçu pour prévenir la *ménopause précoce*. En stimulant la production hormonale et en régulant le cycle menstruel, Menopus aide à retarder les symptômes liés à la ménopause. Une utilisation régulière de trois mois permet de stabiliser les fonctions hormonales et d'améliorer le bien-être général."
+            "image": "produit-3.png",
+            "name": "INFECTICIDE",
+            "description": "Lutte contre les *infections de tout genre : Brûlures vaginales, Syphilis, Gonorrhée, Plaies intestinales*",
+            "full_description": "INFECTICIDE est un puissant antibactérien naturel qui combat les *infections vaginales*, *intestinales*, et d'autres origines. Il aide à soulager les symptômes douloureux tout en stimulant les défenses naturelles de l'organisme pour prévenir les récidives. Un traitement d'un mois est recommandé pour une guérison complète."
         },
         {
-            "image": "produit-1.png",
-            "name": "Hernus",
-            "description": "Lutte contre le developpement de *l'herni*",
-            "full_description": "Hernus est un traitement efficace pour freiner le développement de *l'hernie*. Il agit en renforçant les tissus et en réduisant l'inflammation au niveau de la hernie. Ce produit permet un soulagement notable des douleurs après une semaine d'utilisation, avec des résultats optimaux au bout de 30 jours."
+            "image": "produit-4.png",
+            "name": "GRAND PURIFICATEUR",
+            "description": "Purifie l'organisme, efficace contre les *hémorroïdes internes et externes*",
+            "full_description": "Le GRAND PURIFICATEUR est un remède naturel destiné à purifier l'organisme en agissant sur les *hémorroïdes internes* et *externes*. Il aide à réduire l'inflammation, soulage la douleur et favorise la guérison des tissus endommagés. Un soulagement notable se fait sentir après quelques jours d'utilisation."
         },
         {
-            "image": "produit-1.png",
-            "name": "Athmus",
-            "description": "Remede efficace contre *l'asthme*",
-            "full_description": "Athmus est un remède naturel qui aide à gérer et à prévenir les crises d'*asthme*. Il agit en améliorant les fonctions respiratoires et en réduisant les inflammations des voies respiratoires. Après 15 jours d'utilisation, les patients ressentent une nette amélioration de leur respiration, et la fréquence des crises d'asthme est considérablement réduite."
+            "image": "produit-5.png",
+            "name": "STÉFINISH",
+            "description": "Remède efficace contre *l'infertilité féminine*",
+            "full_description": "STÉFINISH est un remède naturel conçu pour lutter contre *l'infertilité féminine* en régulant le cycle menstruel et en stimulant la *fertilité*. Il améliore la santé reproductive générale, avec des résultats visibles après trois mois de traitement."
         },
         {
-            "image": "produit-1.png",
-            "name": "Ulcerus",
-            "description": "Traite complètement les *ulcères*",
-            "full_description": "Ulcerus est un remède naturel qui soigne les *ulcères* gastriques et duodénaux. Sa formule apaisante permet de réduire rapidement les douleurs et de cicatriser les plaies internes. Les premiers signes de guérison apparaissent après une semaine, et un traitement complet de 30 jours est recommandé pour une rémission totale."
+            "image": "produit-6.png",
+            "name": "FER DE LANCE",
+            "description": "Lutte contre *la faiblesse sexuelle et l'éjaculation précoce*",
+            "full_description": "FER DE LANCE est un stimulant naturel pour les hommes, aidant à combattre la *faiblesse sexuelle* et *l'éjaculation précoce*. Il améliore les performances sexuelles et la confiance en soi, avec des effets visibles dès les premières prises."
         },
         {
-            "image": "produit-1.png",
-            "name": "Palus",
-            "description": "Previent et Guerit le *paludisme*",
-            "full_description": "Palus est un remède qui prévient et traite efficacement le *paludisme*. Sa combinaison unique d'ingrédients actifs renforce le système immunitaire et élimine le parasite responsable du paludisme. Après une cure de 7 jours, les symptômes disparaissent et les rechutes sont considérablement réduites. Ce produit est également recommandé en prophylaxie pour les zones à risque."
+            "image": "produit-7.png",
+            "name": "HÉPATO BILIAIRE",
+            "description": "Remède contre *l'hépatite A, B & C, les problèmes biliaires, et le paludisme*",
+            "full_description": "HÉPATO BILIAIRE est un remède naturel puissant qui aide à soigner les affections du *foie* et de la *vésicule biliaire*, y compris *l'hépatite* et le *paludisme*. Il purifie le sang et renforce les défenses naturelles de l'organisme, avec des résultats notables après un mois de traitement."
+        },
+        {
+            "image": "produit-8.png",
+            "name": "MERCI TONTON",
+            "description": "Solution contre *l'érection molle chez les hommes*",
+            "full_description": "MERCI TONTON est une solution naturelle conçue pour aider les hommes à retrouver des *érections fermes* et durables. Ce remède améliore la circulation sanguine dans la région génitale et renforce les muscles du plancher pelvien, avec des résultats visibles dès la première semaine d'utilisation."
+        },
+        {
+            "image": "produit-9.png",
+            "name": "FRIGIDOS",
+            "description": "Intervient dans les cas de *manque de sensation lors des rapports sexuels chez les femmes*",
+            "full_description": "FRIGIDOS est un remède naturel qui stimule les *sensations* et la *libido* chez les femmes. Il améliore la réponse sexuelle en augmentant le flux sanguin vers les organes génitaux, aidant ainsi à retrouver une vie sexuelle épanouie. Les premiers résultats apparaissent après deux semaines de traitement."
+        },
+        {
+            "image": "produit-10.png",
+            "name": "HEROS",
+            "description": "Soigne *les infections intestinales*",
+            "full_description": "HEROS est un remède efficace contre les *infections intestinales*, aidant à réduire les inflammations et à réguler le transit intestinal. Il favorise la guérison des parois intestinales et améliore la santé digestive générale. Un traitement de 15 jours est recommandé pour une guérison complète."
+        },
+        {
+            "image": "produit-11.png",
+            "name": "ULCERURE",
+            "description": "Solution contre *les ulcères sous toutes leurs formes*",
+            "full_description": "ULCERURE est un traitement naturel qui agit rapidement pour soulager et guérir les *ulcères gastriques* et *duodénaux*. Il apaise les parois de l'estomac, réduit l'acidité et favorise la cicatrisation. Les premiers signes de guérison apparaissent après une semaine d'utilisation."
         }
     ]
+
     const [currentProduit, setCurrentProduit] = useState<{
         image: string;
         name: string;

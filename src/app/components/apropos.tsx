@@ -33,10 +33,10 @@ const APropos = () => {
                         <div className='h-2 w-2 bg-green-700'></div>
 
                     </div>
-                    <h1 className='font-jost text-2xl md:text-3xl text-black leading-tight
+                    <h1 className='font-normal font-jost text-lg md:text-xl text-black leading-tight
                     my-3
                     '>
-                        Nous sommes un agence offrant des formations aux jeunes sur le territoire Togolais.  Des clients nous font confiance depuis 2014
+                        ACTe, Agence de Conseil en Management et Technologie, est un cabinet d’expertise en management (comptable, fiscale, markéting et Ressources Humaines) et technologie. Le cabinet ACTe est au cœur du renforcement de capacités des jeunes diplômés, en leur offrant des formations qualifiés et répondant aux exigences actuelles du marché de l'emploi. Aussi, il offre une gamme de prestations et de services dédiés aux professionnels, étudiants et aux entreprises. Il intervient auprès des Petites et Moyennes Entreprises (PME) dans les domaines de la comptabilité, du conseil, de l’audit et dans la mise en place d’outils de pilotage utiles à une bonne gestion de leur entreprise.
                     </h1>
                     <div className='flex items-center'> <img src="/icons/star.png" alt="" className='h-10' /> <h3 className='font-jost italic text-green-700 text-2xl'>
                         Ce Qui Nous Distingue</h3></div>
