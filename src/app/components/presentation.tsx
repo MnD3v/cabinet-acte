@@ -21,7 +21,7 @@ const Presentation = () => {
                                     variants={Animations.leftToRight({ duration: 0.2 })}
                                     initial="hidden"
                                     whileInView="show"
-                                    className="text-2xl md:text-7xl lg:text-8xl font-semibold
+                                    className="text-5xl md:text-7xl lg:text-8xl font-semibold
                                     font-jost">Cabinet  <span className='text-green-500 font-bold underline underline-offset-8'>ACTe</span> </motion.h1>
                                 <motion.h2
                                     variants={Animations.leftToRight({ duration: 0.5 })}

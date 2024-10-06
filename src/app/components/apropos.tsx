@@ -11,13 +11,7 @@ const APropos = () => {
     ]
     return (
         <section id="a-propos" className='flex flex-col  items-center p-3 my-6'>
-            <div className='hidden max-md:flex  items-center self-start space-x-2 my-3'>
-                <div className='h-2 w-2 bg-green-700 '></div>
-
-                <p className='text-green-700 uppercase font-bricolage font-bold'>A propos de nous</p>
-                <div className='h-2 w-2 bg-green-700'></div>
-
-            </div>
+            <p className='inline-block md:hidden text-green-700 uppercase font-bricolage font-bold bg-[#FAF4EB] rounded-full p-2 px-6 my-2 self-start'>A propos de nous</p>
             <div className='max flex flex-wrap gap-3'>
                 <motion.img src="/entreprise.jpg" alt=""
 
@@ -26,25 +20,20 @@ const APropos = () => {
                     whileInView="show"
                     className='object-cover w-full h-[260px] sm:h-[400px] lg:w-[50%] lg:h-auto' />
                 <div className='w-full lg:w-[400px] xl:w-[600px]'>
-                    <div className='max-md:hidden flex items-center space-x-2'>
-                        <div className='h-2 w-2 bg-green-700'></div>
 
-                        <p className='text-green-700 uppercase font-bricolage font-bold'>A propos de nous</p>
-                        <div className='h-2 w-2 bg-green-700'></div>
 
-                    </div>
-                    <p className='font-normal text-black leading-tight
-                    my-3 p-2
-                    bg-[#FAF4EB] rounded-md
-                    
+                    <p className='hidden md:inline-block text-green-700 uppercase font-bricolage font-bold bg-[#FAF4EB] rounded-full p-2 px-6 my-2'>A propos de nous</p>
+
+                    <p className='font-normal font-bricolage text-lg text-green-600 leading-relaxed
+                    my-3
                     '>
                         ACTe, Agence de Conseil en Management et Technologie, est un cabinet d’expertise en management (comptable, fiscale, markéting et Ressources Humaines) et technologie. Le cabinet ACTe est au cœur du renforcement de capacités des jeunes diplômés, en leur offrant des formations qualifiés et répondant aux exigences actuelles du marché de l'emploi. Aussi, il offre une gamme de prestations et de services dédiés aux professionnels, étudiants et aux entreprises. Il intervient auprès des Petites et Moyennes Entreprises (PME) dans les domaines de la comptabilité, du conseil, de l’audit et dans la mise en place d’outils de pilotage utiles à une bonne gestion de leur entreprise.
                     </p>
                     <div className='flex items-center gap-2'> <motion.img
                         animate={{ rotate: 360, }}
-                        transition={{ repeatType: "loop", repeat: Infinity, duration: 2, ease: "linear" }}
-                        src="/icons/star.png" alt="" className='h-10' /> <h3 className='font-jost font-extralight text-green-700 text-2xl'>
-                            Ce Qui Nous Distingue</h3></div>
+                        transition={{ repeatType: "loop", repeat: Infinity, duration: 4, ease: "linear" }}
+                        src="/icons/star.png" alt="" className='h-10' /> <h3 className='italic font-jost text-zinc-700 text-2xl duration-[4s]'>
+                            Ce qui nous distingue</h3></div>
                     <div className='flex flex-wrap'>
 
                         {

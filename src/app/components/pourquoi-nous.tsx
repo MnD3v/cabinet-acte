@@ -17,13 +17,7 @@ const PourquoiNous = () => {
             <div className='max bg-[url("/utils/footer.png")] bg-cover '>
                 <div className='flex flex-col  p-3 py-6 md:p-6'>
 
-                    <div className='flex  items-center self-start space-x-2 my-3'>
-                        <div className='h-2 w-2 bg-green-500 '></div>
-
-                        <p className='text-green-500 uppercase font-bricolage font-bold'>POURQUOI NOUS CHOISIR</p>
-                        <div className='h-2 w-2 bg-green-500'></div>
-
-                    </div>
+                    <p className='inline text-green-300 uppercase font-bricolage font-bold bg-[#FAF4EB]/30 rounded-full p-2 px-6 my-2 self-start'>Pourquoi nous choisir ?</p>
                     <p className='font-marcellus text-2xl md:text-4xl'>Nous accompagnons chaque etudiant dans l'acquisition des competances
                     </p>
                     <p>Avec une experience de plus de 7 ans, nous avons pour vision de former des jeunes dans les metiers de l'avenir. L'insertion professionnel de nos jeunes est notre principal but</p>
@@ -53,7 +47,7 @@ const PourquoiNous = () => {
                                 initial="hidden"
                                 whileInView="show"
                             />
-                            <motion.img src="/pourquoi.jpeg" alt="" className='relative w-full md:w-[360px] lg:w-[400px] h-[350px] md:h-[500px] rounded-tl-[90px] rounded-br-[90px]
+                            <motion.img src="/pourquoi.png" alt="" className='relative w-full md:w-[400px] lg:w-[440px] h-[350px] md:h-[500px] rounded-tl-[90px] rounded-br-[90px]
                         object-cover z-30'
                                 variants={Animations.leftToRight({ duration: 0.5, inverse: true })}
                                 initial="hidden"

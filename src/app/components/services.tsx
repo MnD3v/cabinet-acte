@@ -44,14 +44,8 @@ const Services = () => {
 
             <div className='max w-full'>
 
-                <div className='flex items-center space-x-2'>
-                    <div className='h-2 w-2 bg-green-700'></div>
-
-                    <p className='text-green-700 uppercase font-bricolage font-bold'>NOS FORMATIONS</p>
-                    <div className='h-2 w-2 bg-green-700'></div>
-
-                </div>
-                <p className='text-green-600 font-jost font-extralight text-2xl my-4 mb-6'>Nous offrons des formations dans 5 grands domaines</p>
+                <p className='inline text-green-700 uppercase font-bricolage font-bold bg-[#FAF4EB] rounded-full p-2 px-6 my-2'>Nos formations</p>
+                <p className='text-black font-jost text-2xl my-4 mb-6'>Nous offrons des formations dans 5 grands domaines</p>
             </div>
 
 
@@ -76,12 +70,12 @@ const Services = () => {
                                         initial="hidden"
                                         whileInView="show"
                                         viewport={{ once: true }}
-                                        className='h-12 md:h-16' />
+                                        className='h-10 md:h-14' />
 
-                                    <p className='text-xl text-black font-semibold font-bricolage'>{element.titre}</p>
+                                    <p className='text-xl text-black font-medium font-jost'>{element.titre}</p>
                                     <p className='text-zinc-600'>{element.description}</p>
                                 </div>
-                                <Link href={"/formations/" + element.link} className='text-center font-jost font-semibold text-white hover:text-green-700  w-full px-6 py-4 mt-1 
+                                <Link href={"/formations/" + element.link} className='text-center font-jost text-white hover:text-green-700  w-full px-6 py-4 mt-1 
                                 bg-green-500 hover:bg-white rounded-md border-2 border-green-500'>Voir les formations</Link>
 
                             </div>
