@@ -51,7 +51,7 @@ const Services = () => {
                     <div className='h-2 w-2 bg-green-700'></div>
 
                 </div>
-                <p className='font-jost italic text-2xl my-4 mb-6'>Nous offrons des formations dans 5 grands domaines</p>
+                <p className='text-green-600 font-jost font-extralight text-2xl my-4 mb-6'>Nous offrons des formations dans 5 grands domaines</p>
             </div>
 
 
@@ -66,7 +66,7 @@ const Services = () => {
                             key={element.icon} className='p-1'> <div
 
                                 className=' h-full flex flex-col justify-between
-                                border border-green-600 hover:border-green-600 rounded-lg
+                          bg-[#FAF4EB]      border border-green-600 hover:border-green-600 rounded-lg
                                  p-4 md:p-6 
                                 transition-all duration-200'>
 
@@ -81,8 +81,8 @@ const Services = () => {
                                     <p className='text-xl text-black font-semibold font-bricolage'>{element.titre}</p>
                                     <p className='text-zinc-600'>{element.description}</p>
                                 </div>
-                                <Link href={"/formations/" + element.link} className='text-center font-jost font-semibold text-green-700 hover:text-green-700  w-full px-6 py-4 mt-1 
-                                bg-green-500/10 hover:bg-white rounded-md border-2 border-green-500'>Voir les formations</Link>
+                                <Link href={"/formations/" + element.link} className='text-center font-jost font-semibold text-white hover:text-green-700  w-full px-6 py-4 mt-1 
+                                bg-green-500 hover:bg-white rounded-md border-2 border-green-500'>Voir les formations</Link>
 
                             </div>
                         </motion.a>

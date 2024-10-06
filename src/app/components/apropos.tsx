@@ -33,13 +33,18 @@ const APropos = () => {
                         <div className='h-2 w-2 bg-green-700'></div>
 
                     </div>
-                    <h1 className='font-normal font-jost text-lg md:text-xl text-black leading-tight
-                    my-3
+                    <p className='font-normal text-black leading-tight
+                    my-3 p-2
+                    bg-[#FAF4EB] rounded-md
+                    
                     '>
                         ACTe, Agence de Conseil en Management et Technologie, est un cabinet d’expertise en management (comptable, fiscale, markéting et Ressources Humaines) et technologie. Le cabinet ACTe est au cœur du renforcement de capacités des jeunes diplômés, en leur offrant des formations qualifiés et répondant aux exigences actuelles du marché de l'emploi. Aussi, il offre une gamme de prestations et de services dédiés aux professionnels, étudiants et aux entreprises. Il intervient auprès des Petites et Moyennes Entreprises (PME) dans les domaines de la comptabilité, du conseil, de l’audit et dans la mise en place d’outils de pilotage utiles à une bonne gestion de leur entreprise.
-                    </h1>
-                    <div className='flex items-center'> <img src="/icons/star.png" alt="" className='h-10' /> <h3 className='font-jost italic text-green-700 text-2xl'>
-                        Ce Qui Nous Distingue</h3></div>
+                    </p>
+                    <div className='flex items-center gap-2'> <motion.img
+                        animate={{ rotate: 360, }}
+                        transition={{ repeatType: "loop", repeat: Infinity, duration: 2, ease: "linear" }}
+                        src="/icons/star.png" alt="" className='h-10' /> <h3 className='font-jost font-extralight text-green-700 text-2xl'>
+                            Ce Qui Nous Distingue</h3></div>
                     <div className='flex flex-wrap'>
 
                         {
@@ -54,12 +59,12 @@ const APropos = () => {
                                 w-full sm:w-72
                                 '>
 
-                                    <div className='h-16 w-16 rounded-full bg-green-100 flex items-center justify-center'>
+                                    <div className='h-16 w-16 rounded-full bg-[#FAF4EB] flex items-center justify-center'>
                                         <img src={"/icons/" + element.icon} alt="" className='h-9' />
                                     </div>
                                     <div className='w-[80%] sm:w-52'>
-                                        <p className='text-green-900 font-jost text-xl font-semibold'>{element.description.split(':')[0]} </p>
-                                        <p>{element.description.split(':')[1]}</p>
+                                        <p className='text-black font-jost text-xl font-semibold'>{element.description.split(':')[0]} </p>
+                                        <p className='text-zinc-600'>{element.description.split(':')[1]}</p>
                                     </div >
 
                                 </motion.div>

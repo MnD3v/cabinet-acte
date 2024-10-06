@@ -8,6 +8,8 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Animations from "./components/utils/item";
 import PourquoiNous from "./components/pourquoi-nous";
+import Equipe from "./components/equipe";
+import Temoignages from "./components/temoignages";
 
 export default function Home() {
   const [isInView, setIsInView] = useState(true);
@@ -43,6 +45,8 @@ export default function Home() {
         <Services></Services>
 
         <PourquoiNous></PourquoiNous>
+        <Temoignages></Temoignages>
+        <Equipe></Equipe>
         <Contact></Contact>
         {/* <Equipe></Equipe> */}
       </motion.div>

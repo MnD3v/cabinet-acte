@@ -15,19 +15,23 @@ const Presentation = () => {
 
                     <AppBar></AppBar>
                     <div className='relative max w-full md:flex justify-between items-end z-30'>
-                        <div className='w-full md:w-1/2 space-y-5 p-6 md:space-y-10 '>
+                        <div className='w-full md:w-[60%] lg:w-[70%] space-y-5 p-6 md:space-y-10 '>
                             <div className="space-y-3 ">
                                 <motion.h1
-                                    variants={Animations.bottomToTop({ duration: 0.5 })}
+                                    variants={Animations.leftToRight({ duration: 0.2 })}
                                     initial="hidden"
                                     whileInView="show"
-                                    className="text-5xl md:text-8xl font-semibold
-                                    font-jost">Cabinet  <span className='text-green-600 font-bold underline underline-offset-8'>ACTe</span> </motion.h1>
-                                <h2 className='font-bricolage text-2xl md:text-3xl font-semibold my-6'>
+                                    className="text-2xl md:text-7xl lg:text-8xl font-semibold
+                                    font-jost">Cabinet  <span className='text-green-500 font-bold underline underline-offset-8'>ACTe</span> </motion.h1>
+                                <motion.h2
+                                    variants={Animations.leftToRight({ duration: 0.5 })}
+                                    initial="hidden"
+                                    whileInView="show"
+                                    className='font-bricolage text-2xl md:text-3xl font-semibold my-6'>
                                     Agence de Conseil en Management et Technologie
-                                </h2>
+                                </motion.h2>
                                 <motion.p
-                                    variants={Animations.bottomToTop({ duration: 2.2 })}
+                                    variants={Animations.leftToRight({ duration: .7 })}
                                     initial="hidden"
                                     whileInView="show"
                                     className='text-lg'
@@ -35,20 +39,20 @@ const Presentation = () => {
                                     Expertise comptable, fiscale, RH, marketing et technologie
                                 </motion.p>
                                 <motion.a href='#contact'
-                                    variants={Animations.scale({ duration: 2.0 })}
+                                    variants={Animations.leftToRight({ duration: .9 })}
                                     initial="hidden"
                                     whileInView="show"
+                                    style={{ boxShadow: "4px 5px #000" }}
+                                    className="flex justify-center items-center font-bricolage text-white hover:text-green-900 
+                                 h-14 w-48 my-3
+                               bg-green-500 hover:bg-white border-2 border-green-700  rounded-full
+                                self-start
+                                "
 
                                 >
-                                    <div
-                                        style={{ boxShadow: "4px 5px #000" }}
-                                        className="flex justify-center items-center font-bricolage text-white hover:text-green-900 
-                                 h-14 w-48 my-3
-                               bg-green-700 hover:bg-white border-2 border-green-700  rounded-full
-                                self-start
-                                ">
-                                        Contactez-nous
-                                    </div>
+
+                                    Contactez-nous
+
                                 </motion.a>
 
 

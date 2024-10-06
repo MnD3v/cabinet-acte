@@ -43,7 +43,7 @@ export default function RootLayout({
           {children}
         </GlobalStateProvider>
 
-        <footer className="relative flex justify-center bg-green-100 bg-cover p-9 pt-9 md:pt-24 overflow-hidden max-sm:text-sm">
+        <footer className="text-white relative flex justify-center bg-[url('/utils/footer.png')] bg-cover p-9 pt-9 md:pt-24 overflow-hidden max-sm:text-sm">
           <div className="absolute bottom-0 right-0 z-0 ">
 
           </div>
@@ -60,7 +60,7 @@ export default function RootLayout({
               </h3>
               <div className="flex items-center">
                 <img src="/icons/phone.png" alt="" className="h-6 " />
-                <p className="p-3">+228 93 45 21 72</p>
+                <p className="p-3">+228 92 21 75 24</p>
               </div>
 
               <div className="flex items-center">
