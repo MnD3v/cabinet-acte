@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { Navigation, Pagination } from "swiper/modules";
+import { NavigationOptions } from "swiper/types";
 
 const Temoignages = () => {
     // Références pour les boutons
@@ -60,8 +61,8 @@ const Temoignages = () => {
                         // Vérifie que swiper.params.navigation est un objet (non juste "true")
                         if (typeof swiper.params.navigation === 'object') {
                             // On "cast" (coerce) pour dire à TypeScript que c'est un objet avec des propriétés
-                            (swiper.params.navigation as any).prevEl = prevRef.current;
-                            (swiper.params.navigation as any).nextEl = nextRef.current;
+                            (swiper.params.navigation as NavigationOptions).prevEl = prevRef.current;
+                            (swiper.params.navigation as NavigationOptions).nextEl = nextRef.current;
                         }
                         swiper.navigation.init();
                         swiper.navigation.update();
