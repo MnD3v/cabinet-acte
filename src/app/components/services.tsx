@@ -61,7 +61,7 @@ const Services = () => {
 
                                 className=' h-full flex flex-col justify-between
                           bg-[#FAF4EB]      border border-green-600 hover:border-green-600 rounded-lg
-                                 p-4 md:p-6 
+                                 p-2 md:p-3 
                                 transition-all duration-200'>
 
                                 <div className='space-y-4'>

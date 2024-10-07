@@ -74,11 +74,15 @@ const Presentation = () => {
 
 
                         </div>
-                        <div className=''>
-                            <div className='flex justify-center'>
-                                <img src="/presentation_image.png" alt="" className='w-[480px] max-w-[80vw]' />
-                            </div>
-                        </div>
+
+
+                        <motion.img
+                            variants={Animations.bottomToTop({ duration: .7, inverse: true })}
+                            initial="hidden"
+                            whileInView="show"
+                            src="/presentation_image.png" alt="" className='w-[480px] max-w-[80vw]' />
+
+
                     </div>
 
                 </div>

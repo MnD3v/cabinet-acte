@@ -24,7 +24,7 @@ const APropos = () => {
 
                     <p className='hidden md:inline-block text-green-700 uppercase font-bricolage font-bold bg-[#FAF4EB] rounded-full p-2 px-6 my-2'>A propos de nous</p>
 
-                    <p className='font-normal font-bricolage text-lg text-green-600 leading-relaxed
+                    <p className='font-normal font-bricolage text-lg leading-relaxed
                     my-3
                     '>
                         ACTe, Agence de Conseil en Management et Technologie, est un cabinet d’expertise en management (comptable, fiscale, markéting et Ressources Humaines) et technologie. Le cabinet ACTe est au cœur du renforcement de capacités des jeunes diplômés, en leur offrant des formations qualifiés et répondant aux exigences actuelles du marché de l'emploi. Aussi, il offre une gamme de prestations et de services dédiés aux professionnels, étudiants et aux entreprises. Il intervient auprès des Petites et Moyennes Entreprises (PME) dans les domaines de la comptabilité, du conseil, de l’audit et dans la mise en place d’outils de pilotage utiles à une bonne gestion de leur entreprise.
