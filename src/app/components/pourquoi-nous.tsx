@@ -31,8 +31,8 @@ const PourquoiNous = () => {
                                         variants={Animations.bottomToTop({ duration: 0.3 })}
                                         initial="hidden"
                                         whileInView="show"
-                                        key={element} className='space-y-3 flex items-center'>
-                                        <img src="/utils/diamant.png" alt="" className='h-7 m-1' />
+                                        key={element} className='space-y-3 flex items-start'>
+                                        <img src="/utils/diamant.png" alt="" className='h-7 m-3' />
                                         <p className=''>{element}</p>
 
                                     </motion.div>

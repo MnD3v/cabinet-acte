@@ -7,6 +7,8 @@ import "swiper/css/pagination";
 
 import { Navigation, Pagination } from "swiper/modules";
 import { NavigationOptions } from "swiper/types";
+import { motion } from "framer-motion";
+import Animations from "./utils/item";
 
 const Temoignages = () => {
     // Références pour les boutons
@@ -24,19 +26,19 @@ const Temoignages = () => {
             "image": "student-2.png",
             "description": "La créativité et l'innovation sont au cœur de ce programme. J'ai appris à transformer mes idées en designs professionnels. Les projets pratiques m'ont vraiment aidée à améliorer mes compétences en design graphique.",
             "nom": "Akouvi Amétépé",
-            "domaine": "Étudiante en design graphique"
+            "domaine": "Étudiant en design graphique"
         },
         {
             "image": "student-3.png",
             "description": "Cette formation en management a révolutionné ma manière d'aborder les projets et de gérer les équipes. Les études de cas et les mises en situation sont particulièrement enrichissantes et permettent de se préparer au monde professionnel.",
             "nom": "Komla Anani",
-            "domaine": "Étudiant en management"
+            "domaine": "Étudiante en management"
         },
         {
             "image": "student-4.png",
             "description": "Le programme de développement web m'a permis de maîtriser les langages de programmation essentiels et de réaliser des projets concrets. J'ai acquis des compétences solides qui me seront très utiles dans ma carrière de développeur.",
             "nom": "Sena Ayaba",
-            "domaine": "Étudiant en développement web"
+            "domaine": "Étudiante en développement web"
         }
     ]
 
@@ -44,7 +46,7 @@ const Temoignages = () => {
     return (
         <div className="relative flex flex-col items-center overflow-hidden">
             <div className="max">
-                <h1 className=' my-6 font-bricolage text-center text-2xl md:text-4xl'>Ce que disent nos étudiants</h1>
+                <h1 className=' my-6 font-bricolage text-center text-2xl md:text-4xl'>Ce que disent nos <span className="text-green-500">étudiants</span> </h1>
                 <Swiper
 
                     modules={[Navigation, Pagination]}  // On spécifie les modules utilisés
@@ -76,15 +78,46 @@ const Temoignages = () => {
                                 className="cursor-pointer">
                                 <div className='flex flex-col items-center sm:flex-row justify-center gap-6 pb-10'>
 
-                                    <img src={"/students/" + element.image} alt="" className='h-36 self-center' />
+                                    <motion.img src={"/students/" + element.image} alt=""
+                                        variants={Animations.scale({ duration: 0.3 })}
+                                        initial="hidden"
+                                        whileInView="show"
+                                        className='h-36 self-center' />
 
-                                    <div className='flex flex-col w-96 max-w-[85%]'>
-                                        <img src="/icons/quote.png" alt="" className='h-10 opacity-20 self-start' />
+                                    <div className='flex flex-col w-96 max-w-[75vw]'>
+                                        <motion.div
+                                            variants={Animations.leftToRight({ duration: 0.4 })}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            className=""
+                                        >
+                                            <img src="/icons/quote.png" alt=""
+
+                                                className='h-10 opacity-20 ' />
+                                        </motion.div>
                                         <p className='text-lg'>{element.description}</p>
-                                        <img src="/icons/quote.png" alt="" className='h-10 opacity-20 rotate-180 self-end' />
+                                        <motion.div
+                                            variants={Animations.bottomToTop({ duration: 0.4 })}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            className="self-end"
+                                        >
+                                            <img src="/icons/quote.png" alt=""
 
-                                        <h2 className='font-black font-bricolage'>{element.nom}</h2>
-                                        <p className='text-orange-500'>{element.domaine}</p>
+                                                className='h-10 opacity-20 rotate-180 ' />
+                                        </motion.div>
+
+
+                                        <motion.h2
+                                            variants={Animations.leftToRight({ duration: 0.4, })}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            className='font-black font-bricolage'>{element.nom}</motion.h2>
+                                        <motion.p
+                                            variants={Animations.leftToRight({ duration: 0.7, })}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            className='text-orange-500'>{element.domaine}</motion.p>
                                     </div>
                                 </div>
                             </SwiperSlide>

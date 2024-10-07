@@ -46,11 +46,11 @@ const Formation = ({ params }: { params: { link: string } }) => {
                 whileInView="show"
                 className=''>
                 <div
-                    style={{
-                        backgroundImage: "radial-gradient(#22c55e 1px, transparent 0)",
-                        backgroundSize: "20px 20px"
-                    }}
-                    className='flex flex-col items-center'>
+                    // style={{
+                    //     backgroundImage: "radial-gradient(#22c55e 1px, transparent 0)",
+                    //     backgroundSize: "20px 20px"
+                    // }}
+                    className=' flex flex-col items-center bg-green-950 text-white'>
                     <AppBar></AppBar>
 
                     <div
@@ -72,15 +72,17 @@ const Formation = ({ params }: { params: { link: string } }) => {
 
                         </div>
                         <div className='w-full flex justify-center'>
-                            <div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6'>
+                            <div className='font-jost w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6'>
                                 {
                                     formation?.formation.map((element) => (
-                                        <div key={element.titre} className='relative p-4 border border-green-400
-                                   bg-[#FAF4EB]     hover:bg-white overflow-hidden'>
+                                        <div key={element.titre} className='relative 
+                                        hover:bg-white border rounded-3xl overflow-hidden'>
                                             <img src="/utils/choose3.png" alt="" className='absolute -bottom-4 -right-4 h-28' />
-                                            <img src="/icons/graduate.png" alt="" className='h-8' />
-                                            <h3 className='font-bold font-bricolage text-green-700'>{element.titre}</h3>
-                                            <p>{element.description}</p>
+                                            <div className='w-full bg-green-600 text-white p-4'>
+                                                <img src="/icons/graduate.png" alt="" className='h-8' />
+                                                <h3 className='font-bold font-jost '>{element.titre}</h3>
+                                            </div>
+                                            <p className='p-4'>{element.description.split("*").map((element2) => (<span className={element.description.indexOf(element2) % 2 == 0 ? `font-normal` : 'font-bold text-green-800'}>{element2}</span>))}</p>
                                         </div>
                                     ))
                                 }

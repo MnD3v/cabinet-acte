@@ -5,14 +5,13 @@ import Animations from './utils/item'
 
 const Presentation = () => {
     return (
-        <section id='' className="flex justify-center bg-[url('/utils/deco.png')] bg-cover">
+        <section id='' className="flex justify-center bg-[url('/utils/deco.png')] bg-opacity-20 bg-cover">
 
             <div className='relative w-full flex justify-center overflow-hidden'>
                 <div className='w-full flex flex-col items-center '>
 
                     <div className='hidden 2xl:block bottom-0 -left-16 absolute h-52 w-52 bg-gradient-to-tr from-green-700 to-green-200 rounded-full pointer-events-none'></div>
                     <div className='-top-24 lg:-top-[340px] -right-24 absolute h-56 w-56 md:h-[250px] md:w-[250px] lg:h-[500px] lg:w-[500px] border border-green-400 rounded-full pointer-events-none z-10'></div>
-
                     <AppBar></AppBar>
                     <div className='relative max w-full md:flex justify-between items-end z-30'>
                         <div className='w-full md:w-[60%] lg:w-[70%] space-y-5 p-6 md:space-y-10 '>

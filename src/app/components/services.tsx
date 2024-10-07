@@ -53,6 +53,7 @@ const Services = () => {
                 {
                     formations.map((element) => (
                         <motion.a
+                            href={"/formations/" + element.link}
                             variants={Animations.bottomToTop({ duration: 0.3 * formations.indexOf(element) + 0.2 })}
                             initial="hidden"
                             whileInView="show"
@@ -60,7 +61,7 @@ const Services = () => {
                             key={element.icon} className='p-1'> <div
 
                                 className=' h-full flex flex-col justify-between
-                          bg-[#FAF4EB]      border border-green-600 hover:border-green-600 rounded-lg
+                          bg-[#FAF4EB] hover:bg-white      border border-green-600 hover:border-green-600 rounded-lg
                                  p-2 md:p-3 
                                 transition-all duration-200'>
 
@@ -75,8 +76,13 @@ const Services = () => {
                                     <p className='text-xl text-black font-medium font-jost'>{element.titre}</p>
                                     <p className='text-zinc-600'>{element.description}</p>
                                 </div>
-                                <Link href={"/formations/" + element.link} className='text-center font-jost text-white hover:text-green-700  w-full px-6 py-4 mt-1 
-                                bg-green-500 hover:bg-white rounded-md border-2 border-green-500'>Voir les formations</Link>
+                                <div className='flex items-center font-jost font-semibold text-green-600 
+                                my-4
+                                gap-2
+                               '>Voir les formations <motion.img
+                                        animate={{ x: 12 }}
+                                        transition={{ repeatType: "loop", repeat: Infinity, duration: 1, ease: "linear" }}
+                                        src="/icons/double_arrow_go.png" alt="" className='h-4' /> </div>
 
                             </div>
                         </motion.a>

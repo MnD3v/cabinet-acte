@@ -65,11 +65,11 @@ const AppBar = () => {
                         </a>
 
                         <ul className="max flex uppercase">
-                            <li className="hover:text-green-600 font-semibold border-l-[1px] border-white/30 pl-9 py-3"><a href={inNotHome ? "/" : "#"}>Accueil</a></li>
-                            <li className="hover:text-green-600 font-semibold border-l-[1px] border-white/30 pl-9 py-3"><a href={inNotHome ? "/" : "#formations"}>Services</a></li>
+                            <li className="hover:text-green-600 font-semibold  pl-9 py-3"><a href={inNotHome ? "/" : "#"}>Accueil</a></li>
+                            <li className="hover:text-green-600 font-semibold  pl-9 py-3"><a href={inNotHome ? "/" : "#formations"}>Services</a></li>
 
-                            <li className="hover:text-green-600 font-semibold border-l-[1px] border-white/30 pl-9 py-3"><a href={inNotHome ? "/" : "#a-propos"}>A Propos</a></li>
-                            <li className="hover:text-green-600 font-semibold border-l-[1px] border-white/30 pl-9 py-3"><a href={inNotHome ? "/" : "#contact"}>Contact</a></li>
+                            <li className="hover:text-green-600 font-semibold  pl-9 py-3"><a href={inNotHome ? "/" : "#a-propos"}>A Propos</a></li>
+                            <li className="hover:text-green-600 font-semibold  pl-9 py-3"><a href={inNotHome ? "/" : "#contact"}>Contact</a></li>
                         </ul>
                     </div>
                     <div className='flex w-full justify-between md:hidden items-center'>
