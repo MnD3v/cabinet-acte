@@ -5,7 +5,7 @@ import Animations from './utils/item'
 const Contact = () => {
 
     const contacts = [{ icon: "green-message.png", title: "Envoyez nous un mail", description: "cabinetactetg@gmail.com", buttonText: "Envoyer un mail", link: "" }, { icon: "green-phone.png", title: "Appelez nous", description: "+228 92 21 75 64", buttonText: "+228 92 21 75 64", link: "" },
-    { icon: "green-map.png", title: "Adresse ", description: "Kara-Tomdè", buttonText: "+228 92 21 75 64", link: "" },]
+    ]
     return (
         <section id="contact" className='flex flex-col items-center justify-center'>
 
@@ -26,16 +26,31 @@ const Contact = () => {
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: true }}
-                        key={element.icon} className='font-bricolage w-full  rounded-xl flex flex-col p-4 gap-3'>
+                        key={element.icon} className='w-full  rounded-xl flex flex-col p-4 gap-3'>
 
                         <img src={`/icons/${element.icon}`} alt="" className='h-10 md:h-14 self-start' />
 
                         <h3>{element.title}</h3>
                         <p style={{ whiteSpace: 'pre-wrap' }} className=''>{element.description} </p>
-
+                        <a href={element.link} target='_blank' className='inline-block px-6 py-3 bg-green-600 rounded-md text-white self-start'> Contacter </a>
 
                     </motion.div>
-                ))}
+                ))}  <motion.div
+
+                    variants={Animations.bottomToTop({ duration: 0.4 })}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true }}
+                    className='w-full  rounded-xl flex flex-col p-4 gap-3'>
+
+                    <img src={`/icons/green-map.png`} alt="" className='h-10 md:h-14 self-start' />
+
+                    <h3>Adresse</h3>
+                    <p style={{ whiteSpace: 'pre-wrap' }} className=''>Kara-Tomdè </p>
+
+
+                </motion.div>
+
             </div>
         </section>
 

@@ -77,9 +77,9 @@ const Services = () => {
                                 </div>
                                 <div className='flex items-center font-jost font-semibold text-green-600 
                                 my-4
-                                gap-2
+                         
                                '>Voir les formations <motion.img
-                                        animate={{ x: 12 }}
+                                        animate={{ x: 24 }}
                                         transition={{ repeatType: "loop", repeat: Infinity, duration: 1, ease: "linear" }}
                                         src="/icons/double_arrow_go.png" alt="" className='h-4' /> </div>
 
