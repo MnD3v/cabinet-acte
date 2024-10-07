@@ -46,7 +46,7 @@ const Temoignages = () => {
     return (
         <div className="relative flex flex-col items-center overflow-hidden">
             <div className="max">
-                <h1 className=' my-6 font-bricolage text-center text-2xl md:text-4xl'>Ce que disent nos <span className="text-green-500">étudiants</span> </h1>
+                <h1 className=' my-6 font-bricolage text-center text-2xl md:text-4xl'>Ce que disent nos <span className="text-green">étudiants</span> </h1>
                 <Swiper
 
                     modules={[Navigation, Pagination]}  // On spécifie les modules utilisés

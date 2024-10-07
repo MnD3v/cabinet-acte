@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import Animations from './utils/item'
-import Link from 'next/link'
 
 const Services = () => {
 

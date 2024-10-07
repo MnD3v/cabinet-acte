@@ -82,7 +82,7 @@ const Formation = ({ params }: { params: { link: string } }) => {
                                                 <img src="/icons/graduate.png" alt="" className='h-8' />
                                                 <h3 className='font-bold font-jost '>{element.titre}</h3>
                                             </div>
-                                            <p className='p-4'>{element.description.split("*").map((element2) => (<span className={element.description.indexOf(element2) % 2 == 0 ? `font-normal` : 'font-bold text-green-800'}>{element2}</span>))}</p>
+                                            <p className='p-4'>{element.description.split("*").map((element2) => (<span key={element2} className={element.description.indexOf(element2) % 2 == 0 ? `font-normal` : 'font-bold text-green-800'}>{element2}</span>))}</p>
                                         </div>
                                     ))
                                 }
