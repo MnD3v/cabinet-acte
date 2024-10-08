@@ -43,7 +43,10 @@ const Services = () => {
 
             <div className='max w-full'>
 
-                <p className='inline text-green-700 uppercase font-bricolage font-bold bg-[#FAF4EB] rounded-full p-2 px-6 my-2'>Nos formations</p>
+                <div className='flex  items-center my-4 gap-2 self-start'>
+                    <div className='bg-green-700 h-2 w-9'></div>
+                    <p className=' text-green-700 text-xl uppercase font-jost font-bold self-start'>Formations</p>
+                </div>
                 <p className='text-black font-jost text-2xl my-4 mb-6'>Nous offrons des formations dans 5 grands domaines</p>
             </div>
 
@@ -69,10 +72,16 @@ const Services = () => {
                                         variants={Animations.scale({ duration: 0.5 })}
                                         initial="hidden"
                                         whileInView="show"
-                                        viewport={{ once: true }}
+                                        viewport={{ once: false }}
                                         className='h-10 md:h-14' />
 
-                                    <p className='text-xl text-black font-medium font-jost'>{element.titre}</p>
+                                    <motion.p
+                                        variants={Animations.bottomToTop({ duration: 0.5, distance: 25 })}
+                                        initial="hidden"
+                                        whileInView="show"
+                                        viewport={{ once: false }}
+
+                                        className='text-xl text-black font-medium font-jost'>{element.titre}</motion.p>
                                     <p className='text-zinc-600'>{element.description}</p>
                                 </div>
                                 <div className='flex items-center font-jost font-semibold text-green-600 

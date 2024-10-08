@@ -84,7 +84,7 @@ const Temoignages = () => {
                                         whileInView="show"
                                         className='h-36 self-center' />
 
-                                    <div className='flex flex-col w-96 max-w-[75vw]'>
+                                    <div className='flex flex-col w-96 max-w-[85vw]'>
                                         <motion.div
                                             variants={Animations.leftToRight({ duration: 0.4 })}
                                             initial="hidden"

@@ -4,7 +4,7 @@ import Animations from './utils/item'
 
 const Contact = () => {
 
-    const contacts = [{ icon: "green-message.png", title: "Envoyez nous un mail", description: "cabinetactetg@gmail.com", buttonText: "Envoyer un mail", link: "" }, { icon: "green-phone.png", title: "Appelez nous", description: "+228 92 21 75 64", buttonText: "+228 92 21 75 64", link: "" },
+    const contacts = [{ icon: "green-message.png", title: "Envoyez nous un mail", description: "cabinetactetg@gmail.com", buttonText: "Envoyer un mail", link: "mailto:cabinetactetg@gmail.com" }, { icon: "green-phone.png", title: "Appelez nous", description: "+228 92 21 75 64", buttonText: "+228 92 21 75 64", link: "tel:+22892217564" },
     ]
     return (
         <section id="contact" className='flex flex-col items-center justify-center'>

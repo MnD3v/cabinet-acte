@@ -17,7 +17,10 @@ const PourquoiNous = () => {
             <div className='max bg-[url("/utils/footer.png")] bg-cover '>
                 <div className='flex flex-col  p-3 py-6 md:p-6'>
 
-                    <p className='inline text-green-300 uppercase font-bricolage font-bold bg-[#FAF4EB]/30 rounded-full p-2 px-6 my-2 self-start'>Pourquoi nous choisir ?</p>
+                    <div className='flex items-center my-4 gap-2 self-start'>
+                        <div className='bg-green-500 h-2 w-6'></div>
+                        <p className=' text-green-500 uppercase font-bricolage font-bold self-start'> A propos de nous</p>
+                    </div>
                     <p className='font-marcellus text-2xl md:text-4xl'>Nous accompagnons chaque etudiant dans l'acquisition des competances
                     </p>
                     <p>Avec une experience de plus de 7 ans, nous avons pour vision de former des jeunes dans les metiers de l'avenir. L'insertion professionnel de nos jeunes est notre principal but</p>
@@ -32,7 +35,11 @@ const PourquoiNous = () => {
                                         initial="hidden"
                                         whileInView="show"
                                         key={element} className='space-y-3 flex items-start'>
-                                        <img src="/utils/diamant.png" alt="" className='h-7 m-3' />
+                                        <motion.img src="/utils/diamant.png" alt=""
+                                            variants={Animations.scale({ duration: 0.5 })}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            className='h-7 m-3' />
                                         <p className=''>{element}</p>
 
                                     </motion.div>

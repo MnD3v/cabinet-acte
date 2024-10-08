@@ -11,7 +11,10 @@ const APropos = () => {
     ]
     return (
         <section id="a-propos" className='flex flex-col  items-center p-3 my-6'>
-            <p className='inline-block md:hidden text-green-700 uppercase font-bricolage font-bold bg-[#FAF4EB] rounded-full p-2 px-6 my-2 self-start'>A propos de nous</p>
+            <div className='flex lg:hidden  items-center my-4 gap-2 self-start'>
+                <div className='bg-green-700 h-2 w-9'></div>
+                <p className=' text-green-700 text-xl uppercase font-jost font-bold self-start'> A propos de nous</p>
+            </div>
             <div className='max flex flex-wrap gap-3'>
                 <motion.img src="/entreprise.jpg" alt=""
 
@@ -22,7 +25,10 @@ const APropos = () => {
                 <div className='w-full lg:w-[400px] xl:w-[600px]'>
 
 
-                    <p className='hidden md:inline-block text-green-700 uppercase font-bricolage font-bold bg-[#FAF4EB] rounded-full p-2 px-6 my-2'>A propos de nous</p>
+                    <div className=' hidden lg:flex items-center my-4 gap-2 self-start'>
+                        <div className='bg-green-700 h-2 w-9'></div>
+                        <p className=' text-green-700 text-xl uppercase font-jost font-bold self-start'> A propos de nous</p>
+                    </div>
 
                     <p className='font-normal font-bricolage text-lg leading-relaxed
                     my-3
@@ -48,9 +54,13 @@ const APropos = () => {
                                 w-full sm:w-72
                                 '>
 
-                                    <div className='h-16 w-16 rounded-full bg-[#FAF4EB] flex items-center justify-center'>
+                                    <motion.div
+                                        variants={Animations.scale({ duration: 0.3 })}
+                                        initial="hidden"
+                                        whileInView="show"
+                                        className='h-16 w-16 rounded-full bg-[#FAF4EB] flex items-center justify-center'>
                                         <img src={"/icons/" + element.icon} alt="" className='h-9' />
-                                    </div>
+                                    </motion.div>
                                     <div className='w-[80%] sm:w-52'>
                                         <p className='text-black font-jost text-xl font-semibold'>{element.description.split(':')[0]} </p>
                                         <p className='text-zinc-600'>{element.description.split(':')[1]}</p>

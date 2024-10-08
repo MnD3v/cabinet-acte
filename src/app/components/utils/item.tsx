@@ -1,11 +1,12 @@
 
 class Animations {
 
-    static leftToRight({ duration, delay, inverse }: {
-        duration: number, delay?: number, inverse?: boolean
+    static leftToRight({ duration, delay, inverse, distance }: {
+        duration: number, delay?: number, inverse?: boolean, distance?: number
     }) {
+        const safe_distance = distance ?? 90;
         return ({
-            hidden: { opacity: 0, x: inverse == true ? 90 : -90, },
+            hidden: { opacity: 0, x: inverse == true ? safe_distance : -safe_distance, },
             show: {
 
                 opacity: 1,
@@ -19,9 +20,10 @@ class Animations {
         });
     };
 
-    static bottomToTop({ duration, inverse, delay }: { duration: number, inverse?: boolean, delay?: number, }) {
+    static bottomToTop({ duration, inverse, delay, distance }: { duration: number, inverse?: boolean, delay?: number, distance?: number }) {
+        const safe_distance = distance ?? 90;
         return ({
-            hidden: { opacity: 0, y: inverse == true ? -90 : 90, },
+            hidden: { opacity: 0, y: inverse == true ? -safe_distance : safe_distance, },
             show: {
 
                 opacity: 1,
