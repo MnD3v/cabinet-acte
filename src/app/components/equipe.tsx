@@ -42,24 +42,31 @@ const Equipe = () => {
                                         <p>(Noté {element.note}/5)</p>
                                     </div>
                                     <div className='flex gap-1'>
-                                        <motion.img src="/icons/facebook.png" alt=""
-                                            variants={Animations.scale({ duration: 0.3 })}
-                                            initial="hidden"
-                                            whileInView="show"
-                                            viewport={{ once: false }}
-                                            className='h-8 w-8 p-2 rounded-full border shadow-md' />
-                                        <motion.img src="/icons/twitter.png" alt=""
-                                            variants={Animations.scale({ duration: 0.5 })}
-                                            initial="hidden"
-                                            whileInView="show"
-                                            viewport={{ once: false }}
-                                            className='h-8 w-8 p-2 rounded-full border shadow-md' />
-                                        <motion.img src="/icons/linkedin.png" alt=""
-                                            variants={Animations.scale({ duration: 0.7 })}
-                                            initial="hidden"
-                                            whileInView="show"
-                                            viewport={{ once: false }}
-                                            className='h-8 w-8 p-2 rounded-full border shadow-md' />
+                                        <a href="https://facebook.com" target='_blank'>
+                                            <motion.img src="/icons/facebook.png" alt=""
+                                                variants={Animations.scale({ duration: 0.3 })}
+                                                initial="hidden"
+                                                whileInView="show"
+                                                viewport={{ once: false }}
+                                                className='h-8 w-8 p-2 rounded-full border shadow-md' />
+                                        </a>
+                                        <a href="https://twitter.com" target='_blank'>
+                                            <motion.img src="/icons/twitter.png" alt=""
+                                                variants={Animations.scale({ duration: 0.5 })}
+                                                initial="hidden"
+                                                whileInView="show"
+                                                viewport={{ once: false }}
+                                                className='h-8 w-8 p-2 rounded-full border shadow-md' />
+                                        </a>
+                                        <a href="https://likedin.com" target='_blank'>
+
+                                            <motion.img src="/icons/linkedin.png" alt=""
+                                                variants={Animations.scale({ duration: 0.7 })}
+                                                initial="hidden"
+                                                whileInView="show"
+                                                viewport={{ once: false }}
+                                                className='h-8 w-8 p-2 rounded-full border shadow-md' />
+                                        </a>
                                     </div>
                                 </div>
                             </div>

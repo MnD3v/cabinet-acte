@@ -15,7 +15,7 @@ const Presentation = () => {
                     <AppBar></AppBar>
                     <div className='relative max w-full md:flex justify-between items-end z-30'>
                         <div className='w-full md:w-[60%] lg:w-[70%] space-y-5 p-6 md:space-y-10 '>
-                            <div className="space-y-3 ">
+                            <div className="space-y-3 md:space-y-5 ">
                                 <motion.h1
                                     variants={Animations.leftToRight({ duration: 0.2 })}
                                     initial="hidden"
@@ -41,10 +41,10 @@ const Presentation = () => {
                                     variants={Animations.leftToRight({ duration: .9 })}
                                     initial="hidden"
                                     whileInView="show"
-                                    style={{ boxShadow: "4px 5px #000" }}
+                                    // style={{ boxShadow: "4px 5px #000" }}
                                     className="flex justify-center items-center font-bricolage text-white hover:text-green-900 
                                  h-14 w-48 my-3
-                               bg-green-500 hover:bg-white border-2 border-green-700  rounded-full
+                               bg-green-500 hover:bg-white rounded-full
                                 self-start
                                 "
 

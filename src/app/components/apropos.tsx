@@ -11,10 +11,15 @@ const APropos = () => {
     ]
     return (
         <section id="a-propos" className='flex flex-col  items-center p-3 my-6'>
-            <div className='flex lg:hidden  items-center my-4 gap-2 self-start'>
+            <motion.div
+                variants={Animations.scale({ duration: 0.5, inverse: true })}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false }}
+                className='flex lg:hidden  items-center my-4 gap-2 self-start'>
                 <div className='bg-green-700 h-2 w-9'></div>
                 <p className=' text-green-700 text-xl uppercase font-jost font-bold self-start'> A propos de nous</p>
-            </div>
+            </motion.div>
             <div className='max flex flex-wrap gap-3'>
                 <motion.img src="/entreprise.jpg" alt=""
 
@@ -23,12 +28,20 @@ const APropos = () => {
                     whileInView="show"
                     className='object-cover w-full h-[260px] sm:h-[400px] lg:w-[50%] lg:h-auto' />
                 <div className='w-full lg:w-[400px] xl:w-[600px]'>
-
-
-                    <div className=' hidden lg:flex items-center my-4 gap-2 self-start'>
-                        <div className='bg-green-700 h-2 w-9'></div>
-                        <p className=' text-green-700 text-xl uppercase font-jost font-bold self-start'> A propos de nous</p>
+                    <div className='w-full flex justify-start'>
+                        <motion.div
+                            variants={Animations.scale({ duration: 0.5, inverse: true })}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: false }}
+                            className='hidden lg:flex  items-center my-4 gap-2 self-start'>
+                            <div className='bg-green-700 h-2 w-9'></div>
+                            <p className=' text-green-700 text-xl uppercase font-jost font-bold self-start'> A propos de nous</p>
+                        </motion.div>
                     </div>
+
+
+
 
                     <p className='font-normal font-bricolage text-lg leading-relaxed
                     my-3

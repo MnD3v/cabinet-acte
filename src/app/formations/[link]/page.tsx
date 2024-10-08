@@ -64,13 +64,18 @@ const Formation = ({ params }: { params: { link: string } }) => {
                 </div>
                 <div className='flex justify-center p-2'>
                     <div className='max'>
-                        <div className='flex  items-center self-start space-x-2 my-3'>
-                            <div className='h-2 w-2 bg-green-700 '></div>
-
-                            <p className='text-green-700 uppercase font-bricolage font-bold'>Formations</p>
-                            <div className='h-2 w-2 bg-green-700'></div>
-
+                        <div className='w-full flex justify-start'>
+                            <motion.div
+                                variants={Animations.scale({ duration: 0.5, inverse: true })}
+                                initial="hidden"
+                                whileInView="show"
+                                viewport={{ once: false }}
+                                className='flex  items-center my-4 gap-2'>
+                                <div className='bg-green-700 h-2 w-9'></div>
+                                <p className=' text-green-700 text-xl uppercase font-jost font-bold'> Formations</p>
+                            </motion.div>
                         </div>
+
                         <div className='w-full flex justify-center'>
                             <div className='font-jost w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6'>
                                 {

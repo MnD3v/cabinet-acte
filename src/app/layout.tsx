@@ -66,17 +66,17 @@ export default function RootLayout({
                 Contact
               </h3>
               <div className="flex items-center">
-                <img src="/icons/phone.png" alt="" className="h-6 " />
+                <img src="/icons/green-phone.png" alt="" className="h-6 " />
                 <p className="p-3">+228 92 21 75 24</p>
               </div>
 
               <div className="flex items-center">
-                <img src="/icons/map.png" alt="" className="h-6 mx-1 " />
+                <img src="/icons/green-map.png" alt="" className="h-6 mx-1 " />
                 <p className="p-3">Notre Siège social est dans le quartier Tomdè, à environ 50 metres après les affaires sociales.</p>
               </div>
-              <div className="my-6 flex gap-2">
+              <div className=" flex gap-2">
                 {socials.map((element) => (
-                  <div key={element.icon} className="bg-green-200 h-14 w-14 rounded-full flex flex-col items-center justify-center">
+                  <div key={element.icon} className="bg-white h-10 w-10 rounded-full flex flex-col items-center justify-center">
                     <img src={`/icons/${element.icon}`} alt="" className="h-6" />
                   </div>
                 ))}

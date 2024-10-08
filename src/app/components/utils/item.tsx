@@ -53,10 +53,10 @@ class Animations {
         });
     };
 
-    static scale({ duration, delay }: { duration: number, delay?: number }) {
-
+    static scale({ duration, delay, inverse }: { duration: number, delay?: number, inverse?: boolean }) {
+        const safe_inverse = inverse ?? false;
         return ({
-            hidden: { opacity: 0, scale: 0, },
+            hidden: { opacity: 0, scale: safe_inverse ? 2 : 0, },
             show: {
 
                 opacity: 1,

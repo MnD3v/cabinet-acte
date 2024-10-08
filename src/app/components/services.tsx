@@ -39,14 +39,21 @@ const Services = () => {
     ];
 
     return (
-        <section id="formations" className='my-10 flex flex-col items-center m-2'>
+        <section id="formations" className='relative my-10 flex flex-col items-center m-2 overflow-hidden'>
 
             <div className='max w-full'>
-
-                <div className='flex  items-center my-4 gap-2 self-start'>
-                    <div className='bg-green-700 h-2 w-9'></div>
-                    <p className=' text-green-700 text-xl uppercase font-jost font-bold self-start'>Formations</p>
+                <div className='w-full flex justify-start'>
+                    <motion.div
+                        variants={Animations.scale({ duration: 0.5, inverse: true })}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: false }}
+                        className='flex  items-center my-4 gap-2'>
+                        <div className='bg-green-700 h-2 w-9'></div>
+                        <p className=' text-green-700 text-xl uppercase font-jost font-bold'> Formations</p>
+                    </motion.div>
                 </div>
+
                 <p className='text-black font-jost text-2xl my-4 mb-6'>Nous offrons des formations dans 5 grands domaines</p>
             </div>
 

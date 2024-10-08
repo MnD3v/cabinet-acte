@@ -17,10 +17,15 @@ const PourquoiNous = () => {
             <div className='max bg-[url("/utils/footer.png")] bg-cover '>
                 <div className='flex flex-col  p-3 py-6 md:p-6'>
 
-                    <div className='flex items-center my-4 gap-2 self-start'>
-                        <div className='bg-green-500 h-2 w-6'></div>
-                        <p className=' text-green-500 uppercase font-bricolage font-bold self-start'> A propos de nous</p>
-                    </div>
+                    <motion.div
+                        variants={Animations.scale({ duration: 0.5, inverse: true })}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: false }}
+                        className=' flex items-center my-4 gap-2 self-start'>
+                        <div className='bg-green-400 h-2 w-9'></div>
+                        <p className=' text-green-400 text-xl uppercase font-jost font-bold self-start'> Pourquoi nous choisir ?</p>
+                    </motion.div>
                     <p className='font-marcellus text-2xl md:text-4xl'>Nous accompagnons chaque etudiant dans l'acquisition des competances
                     </p>
                     <p>Avec une experience de plus de 7 ans, nous avons pour vision de former des jeunes dans les metiers de l'avenir. L'insertion professionnel de nos jeunes est notre principal but</p>
@@ -48,14 +53,20 @@ const PourquoiNous = () => {
                             }
 
                         </div>
-                        <div className='relative w-full md:w-[700px] lg:w-[900px]'>
-                            <motion.div className='-left-3 -top-3 absolute w-[100px] h-[100px] rounded-tl-[100px] rounded-br-[100px] bg-green-500
+                        <div className='relative w-full max-md:h-[400px] md:w-[700px] lg:w-[900px] my-6'>
+                            <motion.div className='-left-3 -top-3 absolute w-[100px] h-[200px] rounded-tl-[100px] rounded-br-[100px] bg-gradient-to-bl from-green-500 to-lime-500
                        '
                                 variants={Animations.leftToRight({ duration: 0.5, inverse: true })}
                                 initial="hidden"
                                 whileInView="show"
                             />
-                            <motion.img src="/pourquoi.png" alt="" className='relative w-full md:w-[400px] lg:w-[440px] h-[350px] sm:h-[500px] md:h-[500px] rounded-tl-[90px] rounded-br-[90px]
+                            <motion.div className='-right-3 -bottom-3 absolute w-[100px] h-[200px] rounded-tl-[100px] rounded-br-[100px] bg-gradient-to-bl from-green-500 to-lime-500
+                       '
+                                variants={Animations.leftToRight({ duration: 0.5, inverse: true })}
+                                initial="hidden"
+                                whileInView="show"
+                            />
+                            <motion.img src="/pourquoi.png" alt="" className='relative w-full md:w-[400px] lg:w-[440px] h-full  rounded-tl-[90px] rounded-br-[90px]
                         object-cover z-30'
                                 variants={Animations.leftToRight({ duration: 0.5, inverse: true })}
                                 initial="hidden"
