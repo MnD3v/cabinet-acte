@@ -10,7 +10,7 @@ const APropos = () => {
 
     ]
     return (
-        <section id="a-propos" className='flex flex-col  items-center p-3 my-6'>
+        <section id="a-propos" className='relative flex flex-col  items-center p-3 my-6 overflow-hidden'>
             <motion.div
                 variants={Animations.scale({ duration: 0.5, inverse: true })}
                 initial="hidden"
