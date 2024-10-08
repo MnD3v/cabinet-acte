@@ -3,7 +3,7 @@ import React from 'react'
 import Animations from './utils/item'
 
 const Equipe = () => {
-    const membres = [{ image: "/equipe/founder.png", poste: "Expert Management (PDG)", nom: "Nazifou KERIM", note: "4.5" }, { image: "/equipe/vice-pdg.png", poste: "Expert Design", nom: "Nom du Vice", note: "4.8" }, { image: "/equipe/marketing.png", poste: "Expert Marketing", nom: "Nom du Vice", note: "4.7" },]
+    const membres = [{ image: "/equipe/founder.png", poste: "Expert Management (PDG)", nom: "Dr KUEVIAKOE", note: "4.5" }, { image: "/equipe/vice-pdg.png", poste: "Expert Design", nom: "Joseph Drim", note: "4.8" }, { image: "/equipe/marketing.png", poste: "Expert Marketing", nom: "Alice Zome", note: "4.7" },]
     return (
         <div className='flex justify-center'>
             <div className='max my-10'>
