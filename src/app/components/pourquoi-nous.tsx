@@ -21,7 +21,7 @@ const PourquoiNous = () => {
                         variants={Animations.scale({ duration: 0.5, inverse: true })}
                         initial="hidden"
                         whileInView="show"
-                        viewport={{ once: false }}
+                        viewport={{ once: true }}
                         className=' flex items-center my-4 gap-2 self-start'>
                         <div className='bg-green-400 h-2 w-9'></div>
                         <p className=' text-green-400 text-xl uppercase font-jost font-bold self-start'> Pourquoi nous choisir ?</p>
@@ -36,11 +36,15 @@ const PourquoiNous = () => {
                             {
                                 raisons.map((element) => (
                                     <motion.div
+                                        viewport={{ once: true }}
+
                                         variants={Animations.bottomToTop({ duration: 0.3 })}
                                         initial="hidden"
                                         whileInView="show"
                                         key={element} className='space-y-3 flex items-start'>
                                         <motion.img src="/utils/diamant.png" alt=""
+                                            viewport={{ once: true }}
+
                                             variants={Animations.scale({ duration: 0.5 })}
                                             initial="hidden"
                                             whileInView="show"
@@ -54,19 +58,28 @@ const PourquoiNous = () => {
 
                         </div>
                         <div className='relative w-full max-md:h-[400px] md:w-[700px] lg:w-[900px] my-6'>
-                            <motion.div className='-left-3 -top-3 absolute w-[100px] h-[200px] rounded-tl-[100px] rounded-br-[100px] bg-gradient-to-bl from-green-500 to-lime-500
+                            <motion.div
+                                viewport={{ once: true }}
+
+                                className='-left-3 -top-3 absolute w-[100px] h-[200px] rounded-tl-[100px] rounded-br-[100px] bg-gradient-to-bl from-green-500 to-lime-500
                        '
                                 variants={Animations.leftToRight({ duration: 0.5, inverse: true })}
                                 initial="hidden"
                                 whileInView="show"
                             />
-                            <motion.div className='-right-3 -bottom-3 absolute w-[100px] h-[200px] rounded-tl-[100px] rounded-br-[100px] bg-gradient-to-bl from-green-500 to-lime-500
+                            <motion.div
+                                viewport={{ once: true }}
+
+                                className='-right-3 -bottom-3 absolute w-[100px] h-[200px] rounded-tl-[100px] rounded-br-[100px] bg-gradient-to-bl from-green-500 to-lime-500
                        '
                                 variants={Animations.leftToRight({ duration: 0.5, inverse: true })}
                                 initial="hidden"
                                 whileInView="show"
                             />
-                            <motion.img src="/pourquoi.png" alt="" className='relative w-full md:w-[400px] lg:w-[440px] h-full  rounded-tl-[90px] rounded-br-[90px]
+                            <motion.img
+                                viewport={{ once: true }}
+
+                                src="/pourquoi.png" alt="" className='relative w-full md:w-[400px] lg:w-[440px] h-full  rounded-tl-[90px] rounded-br-[90px]
                         object-cover z-30'
                                 variants={Animations.leftToRight({ duration: 0.5, inverse: true })}
                                 initial="hidden"

@@ -44,10 +44,11 @@ const Services = () => {
             <div className='max w-full'>
                 <div className='w-full flex justify-start'>
                     <motion.div
+                        viewport={{ once: true }}
+
                         variants={Animations.scale({ duration: 0.5, inverse: true })}
                         initial="hidden"
                         whileInView="show"
-                        viewport={{ once: false }}
                         className='flex  items-center my-4 gap-2'>
                         <div className='bg-green-700 h-2 w-9'></div>
                         <p className=' text-green-700 text-xl uppercase font-jost font-bold'> Formations</p>
@@ -62,6 +63,7 @@ const Services = () => {
                 {
                     formations.map((element) => (
                         <motion.a
+
                             href={"/formations/" + element.link}
                             variants={Animations.bottomToTop({ duration: 0.3 * formations.indexOf(element) + 0.2 })}
                             initial="hidden"
@@ -76,17 +78,20 @@ const Services = () => {
 
                                 <div className='space-y-4'>
                                     <motion.img src={"/icons/" + element.icon} alt=""
+                                        viewport={{ once: true }}
+
                                         variants={Animations.scale({ duration: 0.5 })}
                                         initial="hidden"
                                         whileInView="show"
-                                        viewport={{ once: false }}
                                         className='h-10 md:h-14' />
 
                                     <motion.p
+                                        viewport={{ once: true }}
+
                                         variants={Animations.bottomToTop({ duration: 0.5, distance: 25 })}
                                         initial="hidden"
                                         whileInView="show"
-                                        viewport={{ once: false }}
+
 
                                         className='text-xl text-black font-medium font-jost'>{element.titre}</motion.p>
                                     <p className='text-zinc-600'>{element.description}</p>

@@ -12,16 +12,19 @@ const APropos = () => {
     return (
         <section id="a-propos" className='relative flex flex-col  items-center p-3 my-6 overflow-hidden'>
             <motion.div
+                viewport={{ once: true }}
+
                 variants={Animations.scale({ duration: 0.5, inverse: true })}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: false }}
+
                 className='flex lg:hidden  items-center my-4 gap-2 self-start'>
                 <div className='bg-green-700 h-2 w-9'></div>
                 <p className=' text-green-700 text-xl uppercase font-jost font-bold self-start'> A propos de nous</p>
             </motion.div>
             <div className='max flex flex-wrap gap-3'>
                 <motion.img src="/entreprise.jpg" alt=""
+                    viewport={{ once: true }}
 
                     variants={Animations.leftToRight({ duration: 0.5 })}
                     initial="hidden"
@@ -30,10 +33,12 @@ const APropos = () => {
                 <div className='w-full lg:w-[400px] xl:w-[600px]'>
                     <div className='w-full flex justify-start'>
                         <motion.div
+                            viewport={{ once: true }}
+
                             variants={Animations.scale({ duration: 0.5, inverse: true })}
                             initial="hidden"
                             whileInView="show"
-                            viewport={{ once: false }}
+
                             className='hidden lg:flex  items-center my-4 gap-2 self-start'>
                             <div className='bg-green-700 h-2 w-9'></div>
                             <p className=' text-green-700 text-xl uppercase font-jost font-bold self-start'> A propos de nous</p>
@@ -58,6 +63,8 @@ const APropos = () => {
                         {
                             avantages.map((element) => (
                                 <motion.div
+                                    viewport={{ once: true }}
+
                                     variants={Animations.bottomToTop({ duration: 0.3 * avantages.indexOf(element) })}
                                     initial="hidden"
                                     whileInView="show"
@@ -68,6 +75,8 @@ const APropos = () => {
                                 '>
 
                                     <motion.div
+                                        viewport={{ once: true }}
+
                                         variants={Animations.scale({ duration: 0.3 })}
                                         initial="hidden"
                                         whileInView="show"

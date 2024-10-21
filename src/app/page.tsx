@@ -23,7 +23,9 @@ export default function Home() {
     }
   }, [])
   return (
-    <div>
+    <div
+
+    >
       {
         isInView && <div className='fixed flex flex-col items-center justify-center bg-white h-full w-full'>
           <div>
@@ -36,6 +38,8 @@ export default function Home() {
         variants={Animations.opacity({ duration: 0.9 })}
         initial="hidden"
         whileInView="show"
+        viewport={{ once: true }}
+
         className="">
 
 

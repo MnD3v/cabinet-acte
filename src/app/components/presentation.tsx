@@ -5,7 +5,7 @@ import Animations from './utils/item'
 
 const Presentation = () => {
     return (
-        <section id='' className="flex justify-center bg-[url('/cover.jpg')] bg-center bg-opacity-20 bg-cover">
+        <section id='' className="flex justify-center bg-[url('/cover.png')] bg-center bg-opacity-20 bg-cover">
 
             <div className='relative text-white w-full flex justify-center overflow-hidden bg-black/60'>
                 <div className='w-full flex flex-col items-center '>
@@ -17,12 +17,16 @@ const Presentation = () => {
                         <div className='w-full md:w-[60%] lg:w-[70%] space-y-5 p-6 md:space-y-10 '>
                             <div className="space-y-5 md:space-y-10 ">
                                 <motion.h1
+                                    viewport={{ once: true }}
+
                                     variants={Animations.leftToRight({ duration: 0.2 })}
                                     initial="hidden"
                                     whileInView="show"
                                     className="text-5xl md:text-7xl lg:text-8xl font-semibold
                                     font-play italic">Cabinet  <span className='text-green-500 font-bold underline underline-offset-8'>ACTe</span> </motion.h1>
                                 <motion.h2
+                                    viewport={{ once: true }}
+
                                     variants={Animations.leftToRight({ duration: 0.5 })}
                                     initial="hidden"
                                     whileInView="show"
@@ -30,6 +34,8 @@ const Presentation = () => {
                                     Agence de Conseil en Management et Technologie
                                 </motion.h2>
                                 <motion.p
+                                    viewport={{ once: true }}
+
                                     variants={Animations.leftToRight({ duration: .7 })}
                                     initial="hidden"
                                     whileInView="show"
@@ -38,6 +44,8 @@ const Presentation = () => {
                                     Expertise comptable, fiscale, RH, marketing et technologie
                                 </motion.p>
                                 <motion.a href='#contact'
+                                    viewport={{ once: true }}
+
                                     variants={Animations.leftToRight({ duration: .9 })}
                                     initial="hidden"
                                     whileInView="show"
@@ -59,9 +67,15 @@ const Presentation = () => {
                             </div>
 
                             <div className='h-px bg-zinc-200 w-full'></div>
-                            <div className='flex'>
-                                <img src="/utils/satisfied.png" alt="" className='h-24' />
-                            </div>
+
+                            <motion.img
+                                viewport={{ once: true }}
+
+                                variants={Animations.scale({ duration: .9 })}
+                                initial="hidden"
+                                whileInView="show"
+                                src="/utils/satisfied.png" alt="" className='h-24' />
+
 
 
                         </div>
