@@ -61,7 +61,7 @@ const AppBar = () => {
 
                     </div>
                     <div className='w-full hidden md:flex items-center justify-between '>
-                        <a href={inNotHome ? "/" : "#"}> <img src="/logo.png" alt="" className="h-16 md:h-24" />
+                        <a href={inNotHome ? "/" : "#"}> <img src="/white-logo.png" alt="" className="h-12 md:h-16" />
                         </a>
 
                         <ul className="max flex uppercase">
@@ -73,7 +73,7 @@ const AppBar = () => {
                         </ul>
                     </div>
                     <div className='flex w-full justify-between md:hidden items-center'>
-                        <img src="/logo.png" alt="" className="h-16 md:h-24" />
+                        <img src="/white-logo.png" alt="" className="h-12 md:h-16" />
                         <button
                             onClick={() => {
 
