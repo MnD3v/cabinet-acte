@@ -59,7 +59,13 @@ export default function RootLayout({
             <div>
               <img src="/white-logo.png" alt="" className="w-12 md:w-16" />
               <p className="w-80 mt-6">Chez ACTe, nous offrons des formations sur mesure pour améliorer vos compétences et renforcer votre carrière, en alliant tradition et innovation dans des domaines variés.</p>
-
+              <div className=" flex gap-2">
+                {socials.map((element) => (
+                  <div key={element.icon} className="bg-white h-10 w-10 rounded-full flex flex-col items-center justify-center">
+                    <img src={`/icons/${element.icon}`} alt="" className="h-6" />
+                  </div>
+                ))}
+              </div>
             </div>
             <div className="pt-6 w-80 font-bricolage">
               <h3 className="text-lg font-bold">
@@ -74,13 +80,7 @@ export default function RootLayout({
                 <img src="/icons/green-map.png" alt="" className="h-6 mx-1 " />
                 <p className="p-3">Notre Siège social est dans le quartier Tomdè, à environ 50 metres après les affaires sociales.</p>
               </div>
-              <div className=" flex gap-2">
-                {socials.map((element) => (
-                  <div key={element.icon} className="bg-white h-10 w-10 rounded-full flex flex-col items-center justify-center">
-                    <img src={`/icons/${element.icon}`} alt="" className="h-6" />
-                  </div>
-                ))}
-              </div>
+            
             </div>
 
           </div>

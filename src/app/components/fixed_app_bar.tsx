@@ -38,7 +38,7 @@ const FixedAppBar = ({ fixed }: { fixed?: boolean }) => {
         >
             <div className='max w-full flex justify-between
              items-center
-             py-4 md:py-6 px-4
+              px-4
              '>
 
                 <a href="#"> <img src="/logo.png" alt="" className='h-16 md:h-24' />

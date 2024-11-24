@@ -42,7 +42,7 @@ export default function Home() {
 
         className="">
 
-
+        <FixedAppBar></FixedAppBar>
         <Presentation></Presentation>
         <APropos></APropos>
         <Services></Services>
