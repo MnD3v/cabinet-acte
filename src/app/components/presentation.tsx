@@ -23,14 +23,14 @@ const Presentation = () => {
                                     initial="hidden"
                                     whileInView="show"
                                     className="text-5xl md:text-7xl lg:text-8xl font-semibold
-                                    font-play italic">Cabinet  <span className='text-green-500 font-bold underline underline-offset-8'>ACTe</span> </motion.h1>
+                                    font-play italic">Cabinet  <span className='text-green-500 font-jost font-bold '>ACTe</span> </motion.h1>
                                 <motion.h2
                                     viewport={{ once: true }}
 
                                     variants={Animations.leftToRight({ duration: 0.5 })}
                                     initial="hidden"
                                     whileInView="show"
-                                    className='font-play text-2xl md:text-3xl font-semibold my-6'>
+                                    className='font-jost text-2xl md:text-3xl font-semibold my-6'>
                                     Agence de Conseil en Management et Technologie
                                 </motion.h2>
                                 <motion.p
@@ -50,9 +50,9 @@ const Presentation = () => {
                                     initial="hidden"
                                     whileInView="show"
                                     // style={{ boxShadow: "4px 5px #000" }}
-                                    className="flex justify-center items-center font-bricolage text-white hover:text-green-900 
-                                 h-14 w-48 my-3
-                               bg-green-500 hover:bg-white rounded-full
+                                    className="flex justify-center items-center font-bricolage font-bold text-white hover:text-green-900 
+                                 h-10 md:h-12 w-48 my-3
+                               bg-green-500 hover:bg-white rounded-full ring-2 ring-green-500/40
                                 self-start
                                 "
 

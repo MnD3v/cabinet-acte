@@ -66,7 +66,7 @@ const AppBar = () => {
 
                         <ul className="max flex uppercase">
                             <li className="hover:text-green-600 font-semibold  pl-9 py-3"><a href={inNotHome ? "/" : "#"}>Accueil</a></li>
-                            <li className="hover:text-green-600 font-semibold  pl-9 py-3"><a href={inNotHome ? "/" : "#formations"}>Services</a></li>
+                            <li className="hover:text-green-600 font-semibold  pl-9 py-3"><a href={inNotHome ? "/" : "#formations"}>Formations</a></li>
 
                             <li className="hover:text-green-600 font-semibold  pl-9 py-3"><a href={inNotHome ? "/" : "#a-propos"}>A Propos</a></li>
                             <li className="hover:text-green-600 font-semibold  pl-9 py-3"><a href={inNotHome ? "/" : "#contact"}>Contact</a></li>

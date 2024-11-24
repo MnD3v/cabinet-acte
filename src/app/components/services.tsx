@@ -72,7 +72,7 @@ const Services = () => {
                             key={element.icon} className='p-1'> <div
 
                                 className=' h-full flex flex-col justify-between
-                          bg-[#FAF4EB] hover:bg-white      border border-green-600 hover:border-green-600 rounded-lg
+                          hover:bg-white      border border-gray-300 hover:border-green-600 rounded-2xl
                                  p-2 md:p-3 
                                 transition-all duration-200'>
 

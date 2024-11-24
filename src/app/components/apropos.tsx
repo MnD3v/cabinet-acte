@@ -80,7 +80,7 @@ const APropos = () => {
                                         variants={Animations.scale({ duration: 0.3 })}
                                         initial="hidden"
                                         whileInView="show"
-                                        className='h-16 w-16 rounded-full bg-[#FAF4EB] flex items-center justify-center'>
+                                        className='h-16 w-16 rounded-full bg-gray-100 flex items-center justify-center'>
                                         <img src={"/icons/" + element.icon} alt="" className='h-9' />
                                     </motion.div>
                                     <div className='w-[80%] sm:w-52'>

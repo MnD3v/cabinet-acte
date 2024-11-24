@@ -3,7 +3,12 @@ import React from 'react'
 import Animations from './utils/item'
 
 const Equipe = () => {
-    const membres = [{ image: "/equipe/founder.png", poste: "Expert Management (PDG)", nom: "Dr KUEVIAKOE", note: "4.5" }, { image: "/equipe/vice-pdg.png", poste: "Expert Design", nom: "Joseph Drim", note: "4.8" }, { image: "/equipe/marketing.png", poste: "Expert Marketing", nom: "Alice Zome", note: "4.7" },]
+    const membres = [{ image: "/equipe/founder.png", poste: "Responsable pôle RH", nom: "Dr Géraldine PIGNANDI", note: "4.5" }, { image: "/equipe/vice-pdg.png", poste: "Consultant formateur, Stratégie Marketing", nom: "Dr Luc MAGREBE", note: "4.8" }, { image: "/equipe/marketing.png", poste: " Gestionnaire Comptable agrée", nom: "Drt R. Kangni KUEVIAKOE", note: "4.7" },
+        { image: "/equipe/vice-pdg.png", poste: "Consultant formateur, informaticien", nom: "Justin HOULOUMIE", note: "4.8" }, { image: "/equipe/marketing.png", poste: "Consultant formateur, Graphiste designer", nom: "Aubin KUEVIAKOE", note: "4.7" },
+        { image: "/equipe/marketing.png", poste: "Consultant formateur, Développeur ", nom: "Emanuel DJATIKA", note: "4.7" },
+
+        
+    ]
     return (
         <div className='flex justify-center'>
             <div className='max my-10'>
