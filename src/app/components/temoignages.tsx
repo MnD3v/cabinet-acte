@@ -83,12 +83,7 @@ const Temoignages = () => {
                                     whileInView="show"
                                     viewport={{ once: true }}
                                     className='font-semibold text-xl font-roboto text-e_orange pt-4' >{element.nom}</motion.h2>
-                                <motion.p
-                                    variants={Animations.scale({ duration: 0.7, })}
-                                    initial="hidden"
-                                    whileInView="show"
-                                    viewport={{ once: true }}
-                                    className=' text-[#000000] text-xl font-roboto'>{element.domaine}</motion.p>
+                        
                              </div>
                                 </div>
                                 <motion.p
