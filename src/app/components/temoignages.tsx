@@ -12,32 +12,32 @@ const Temoignages = () => {
             "image": "mohamed.png",
             "description": "Mon parcours expertise comptable au cabinet ACTe m’a permis de développer des compétences pratiques en comptabilité grâce à des formateurs qualifiés et à des études de cas concrètes. L’encadrement était excellent et l’ambiance professionnelle m’a aidée à mieux comprendre le monde de la comptabilité. En seulement trois mois, j’ai acquis des connaissances solides que je peux désormais appliquer dans mon travail. Oui, j’ai été pleinement satisfaite de la formation. Le cabinet ACTe a non seulement répondu à mes attentes, mais les a également dépassées. Les cours étaient bien structurés, les formateurs étaient disponibles pour répondre à toutes mes questions, et le contenu de la formation était en phase avec les compétences que je souhaitais acquérir. J’ai vraiment apprécié le professionnalisme et l’accompagnement tout au long du processus.Je recommanderai volontier le cabinet ACTe à d’autres personnes car c’est un excellent environnement pour apprendre et se développer.",
             "nom": "MOHAMED Richadatou",
-            "domaine": "Étudiante en développement web"
+            
         },
         {
             "image": "sodou.png",
             "description": "Ma formation au cabinet ACTe, parcours expertise comptable et CMD a été enrichissante. L’expertise des formateurs m’ont permis de développer de nouvelles compétences dans le domaine du management et de la technologie. Leur capacité à adapter le contenu de la formation à nos besoins individuels a vraiment fait la différence. Absolument ! Le cabinet ACTe a non seulement répondu à mes attentes, mais a aussi dépassé certaines d’entre elles. J’ai acquis des compétences pratiques qui me seront précieuses pour ma carrière professionnelle future. OUI, je recommande vivement le cabinet ACTe à toute personne cherchant à développer ses compétences. La qualité de l’enseignement et l’approche personnalisée font de ce cabinet un lieu idéal pour se former.",
             "nom": "SODOU Sévérine",
-            "domaine": "Étudiant en développement mobile"
+            
         },
         {
             "image": "matimain.png",
             "description": "Ma formation en assistant de gestion au cabinet a été très fructueuse dans le sens où les cours étaient vraiment axés sur le module que j'ai choisi et j'ai vraiment aimé. J'ai été satisfaite de l'enseignement et j'ai vraiment acquis des compétences outre ce que je suis venue chercher. Sans hésiter, je recommande vivement le Cabinet ACTe à tous ceux qui veulent se faire former. Le cabinet ACTe m'a accordé un stage que je fais actuellement.",
             "nom": "MATIMAIN Colette",
-            "domaine": "Étudiant en design graphique"
+            
         },
         {
             "image": "massaba.png",
             "description": "Ma formation au cabinet ACTe a été en ce qui me concerne un vrai éveil de conscience. Une expérience passionnante et inspirante au cours de laquelle j'ai pu réaliser les défis qui m'attendent dans le monde professionnel, m'armer des compétences nécessaires et pratiquer pour bâtir la confiance en soi et une mentalité pour y faire face. La formation a répondu à mes attentes et a été satisfaisante. Je recommande le cabinet à tout jeune ayant un esprit d'entreprenariat",
             "nom": "MASSABA Leben Y.",
-            "domaine": "Étudiante en management"
+            
         },
 
         {
             "image": "tam.png",
             "description": "Ma formation en parcours expertise comptable au cabinet acte était excellente vue la discipline et la rigueur. J'ai été satisfaite vu que mon objectif a été atteint, la formation était un succès pour moi. Cette formation m'a apporté d'abord l'intégration sociale ensuite les connaissances nécessaires pour mon parcours professionnel. Oui je vais recommander une ou même plusieurs personnes d’aller suivre leur formation au cabinet ACTe.",
             "nom": "TAMASSI Carolle",
-            "domaine": "Étudiante en développement web"
+            
         }
     ]
 
