@@ -62,7 +62,7 @@ const PourquoiNous = () => {
                             <motion.div
                                 viewport={{ once: true }}
 
-                                className='-left-3 -top-3 absolute w-[100px] h-[200px] rounded-tl-[100px] rounded-br-[100px] bg-gradient-to-bl from-green-500 to-lime-500
+                                className='-left-3 -top-3 absolute w-[100px] h-[200px] bg-gradient-to-bl from-green-500 to-lime-500
                        '
                                 variants={Animations.leftToRight({ duration: 0.5, inverse: true })}
                                 initial="hidden"
@@ -71,7 +71,7 @@ const PourquoiNous = () => {
                             <motion.div
                                 viewport={{ once: true }}
 
-                                className='-right-3 -bottom-3 absolute w-[100px] h-[200px] rounded-tl-[100px] rounded-br-[100px] bg-gradient-to-bl from-green-500 to-lime-500
+                                className='-right-3 -bottom-3 absolute w-[100px] h-[200px] bg-gradient-to-bl from-green-500 to-lime-500
                        '
                                 variants={Animations.leftToRight({ duration: 0.5, inverse: true })}
                                 initial="hidden"
@@ -80,7 +80,7 @@ const PourquoiNous = () => {
                             <motion.img
                                 viewport={{ once: true }}
 
-                                src="/pourquoi.png" alt="" className='relative w-full md:w-[400px] lg:w-[440px] h-full  rounded-tl-[90px] rounded-br-[90px]
+                                src="/pourquoi.png" alt="" className='relative w-full md:w-[400px] lg:w-[440px] h-full  
                         object-cover z-30'
                                 variants={Animations.leftToRight({ duration: 0.5, inverse: true })}
                                 initial="hidden"

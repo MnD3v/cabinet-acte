@@ -31,9 +31,9 @@ const Formation = ({ params }: { params: { link: string } }) => {
 
 
     return (
-        <div>
+        <div className='font-syne'>
             {
-                isInView && <div className='fixed flex flex-col items-center justify-center bg-white h-full w-full'>
+                isInView && <div className='fixed font-syne flex flex-col items-center justify-center bg-green-50 h-full w-full'>
                     <div>
                     </div>
                     <img src="/mini-logo.png" alt="" className="h-14 md:h-24 my-3" />
@@ -56,7 +56,7 @@ const Formation = ({ params }: { params: { link: string } }) => {
                     <div
 
                         className='w-full justify-center items-center pb-8  md:py-12 px-2'>
-                        <h1 className='font-jost uppercase text-center text-2xl md:text-5xl'> {formation?.domaine} </h1>
+                        <h1 className='font-abel uppercase text-center text-2xl md:text-5xl'> {formation?.domaine} </h1>
 
 
                     </div>
@@ -69,10 +69,11 @@ const Formation = ({ params }: { params: { link: string } }) => {
                                 variants={Animations.scale({ duration: 0.5, inverse: true })}
                                 initial="hidden"
                                 whileInView="show"
-                                viewport={{ once: false }}
+                                viewport={{ once: true }}
                                 className='flex  items-center my-4 gap-2'>
-                                <div className='bg-green-700 h-2 w-9'></div>
-                                <p className=' text-green-700 text-xl uppercase font-jost font-bold'> Formations</p>
+                            
+                                <p className=' text-green-700 text-xl md:text-2xl uppercase font-abel font-bold'> Formations</p>
+                                <div className='bg-green-700 h-px w-9'></div>
                             </motion.div>
                         </div>
 
@@ -84,8 +85,8 @@ const Formation = ({ params }: { params: { link: string } }) => {
                                         hover:bg-white border rounded-3xl overflow-hidden'>
                                             <img src="/utils/choose3.png" alt="" className='absolute -bottom-4 -right-4 h-28' />
                                             <div className='w-full bg-green-600 text-white p-4'>
-                                                <img src="/icons/graduate.png" alt="" className='h-8' />
-                                                <h3 className='font-bold font-jost '>{element.titre}</h3>
+                                             
+                                                <h3 className='font-bold font-abel '>{element.titre}</h3>
                                             </div>
                                             <p className='p-4'>{element.description.split("*").map((element2) => (<span key={element2} className={element.description.indexOf(element2) % 2 == 0 ? `font-normal` : 'font-bold text-green-800'}>{element2}</span>))}</p>
                                         </div>

@@ -84,7 +84,7 @@ const Services = () => {
                                         variants={Animations.scale({ duration: 0.5 })}
                                         initial="hidden"
                                         whileInView="show"
-                                        className='h-10 md:h-14' />
+                                        className='h-14 md:h-16' />
 
                                     <motion.p
                                         viewport={{ once: true }}
@@ -94,7 +94,7 @@ const Services = () => {
                                         whileInView="show"
 
 
-                                        className='text-xl text-black font-medium font-jost'>{element.titre}</motion.p>
+                                        className='text-xl md:text-2xl text-black font-bold font-abel'>{element.titre}</motion.p>
                                     <p className='text-zinc-600'>{element.description}</p>
                                 </div>
                                 <div className='flex items-center font-jost font-semibold 

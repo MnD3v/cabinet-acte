@@ -74,17 +74,17 @@ const Temoignages = () => {
 
                                         className='h-10 opacity-20 ' />
                                 </motion.div>
-                                <div className="flex gap-2">
+                                <div className="flex gap-2 items-center">
                                     <img src={"/students/"+element.image} alt="" className="h-24"/>
-                             <div className="items-start">
+                          
                              <motion.h2
-                                    variants={Animations.leftToRight({ duration: 0.4, })}
+                                    variants={Animations.leftToRight({ duration: 0.4,inverse:true })}
                                     initial="hidden"
                                     whileInView="show"
                                     viewport={{ once: true }}
                                     className='font-semibold text-xl font-roboto text-e_orange pt-4' >{element.nom}</motion.h2>
                         
-                             </div>
+                        
                                 </div>
                                 <motion.p
                                     variants={Animations.scale({ duration: .6 })}
