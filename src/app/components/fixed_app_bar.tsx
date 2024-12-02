@@ -31,7 +31,7 @@ const FixedAppBar = ({ fixed }: { fixed?: boolean }) => {
     }, [])
 
     return (
-        <motion.div className={` fixed flex justify-center font-jost text-black bg-white  w-full shadow z-50`}
+        <motion.div className={` fixed flex justify-center font-jost text-black bg-green-50  w-full shadow z-50`}
             initial={{ y: -200 }}
             animate={{ y: fixed == true ? 0 : showAppBar ? 0 : -200, }}
 

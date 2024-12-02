@@ -9,10 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily:{
-        syne: "Syne",
+        syne: "Work Sans",
         play: "Playfair Display",
-        bricolage: "Bricolage Grotesque",
-        jost: "Jost"
+        bricolage: "Work Sans",
+        abel: "Abel"
       },
       colors: {
         background: "var(--background)",

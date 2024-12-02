@@ -19,8 +19,9 @@ const APropos = () => {
                 whileInView="show"
 
                 className='flex lg:hidden  items-center my-4 gap-2 self-start'>
-                <div className='bg-green-700 h-2 w-9'></div>
-                <p className=' text-green-700 text-xl uppercase font-jost font-bold self-start'> A propos de nous</p>
+               
+                <p className=' text-green-700 text-xl uppercase font-abel font-bold self-start'> A propos de nous</p>
+                <div className='bg-green-700 h-px w-9'></div>
             </motion.div>
             <div className='max flex flex-wrap gap-3'>
                 <motion.img src="/entreprise.jpg" alt=""
@@ -40,8 +41,9 @@ const APropos = () => {
                             whileInView="show"
 
                             className='hidden lg:flex  items-center my-4 gap-2 self-start'>
-                            <div className='bg-green-700 h-2 w-9'></div>
-                            <p className=' text-green-700 text-xl uppercase font-jost font-bold self-start'> A propos de nous</p>
+                            <p className=' text-green-700 text-xl uppercase font-abel font-bold self-start'> A propos de nous</p>
+                            <div className='bg-green-700 h-px w-9'></div>
+
                         </motion.div>
                     </div>
 
@@ -49,14 +51,11 @@ const APropos = () => {
 
 
                     <p className='font-normal font-bricolage text-lg leading-relaxed
-                    my-3
+             
                     '>
-                        <span className='font-bold text-green-600 text-3xl'>ACTe</span>, Agence de Conseil en  <span className='font-bold'>Management</span>  et <span className='font-bold'>Technologie</span>, est un cabinet d’expertise en management (comptable, fiscale, markéting et Ressources Humaines) et technologie. Le cabinet ACTe est au cœur du renforcement de capacités des jeunes diplômés, en leur offrant des <span className='font-bold text-green-600'>formations qualifiés</span> et <span className='font-bold text-green-600'>répondant aux exigences actuelles du marché de l'emploi</span>.  Aussi, il offre une gamme de prestations et de services dédiés aux professionnels, étudiants et aux entreprises. Il intervient auprès des Petites et Moyennes Entreprises (PME) dans les domaines de la <span className='font-bold '>comptabilité , du conseil, de l’audit et dans la mise en place d’outils</span>  de pilotage utiles à une bonne gestion de leur entreprise.
+                        <span className='font-abel font-black text-green-600 text-3xl'>ACTe</span>, Agence de Conseil en  <span className='font-bold'>Management</span>  et <span className='font-bold'>Technologie</span>, est un cabinet d’expertise en management (comptable, fiscale, markéting et Ressources Humaines) et technologie. Le cabinet ACTe est au cœur du renforcement de capacités des jeunes diplômés, en leur offrant des <span className='font-bold '>formations qualifiés</span> et <span className='font-bold '>répondant aux exigences actuelles du marché de l'emploi</span>.  Aussi, il offre une gamme de prestations et de services dédiés aux professionnels, étudiants et aux entreprises. Il intervient auprès des Petites et Moyennes Entreprises (PME) dans les domaines de la <span className='font-bold '>comptabilité , du conseil, de l’audit et dans la mise en place d’outils</span>  de pilotage utiles à une bonne gestion de leur entreprise.
                     </p>
-                    <div className='flex items-center gap-2'> <motion.img
-                        animate={{ rotate: 360, }}
-                        transition={{ repeatType: "loop", repeat: Infinity, duration: 4, ease: "linear" }}
-                        src="/icons/star.png" alt="" className='h-10' /> <h3 className='italic font-jost text-zinc-700 text-2xl duration-[4s]'>
+                    <div className='flex items-center gap-2'>  <h3 className='font-abel font-bold text-green-700 text-2xl duration-[4s]'>
                             Ce qui nous distingue</h3></div>
                     <div className='flex flex-wrap'>
 
@@ -80,8 +79,8 @@ const APropos = () => {
                                         variants={Animations.scale({ duration: 0.3 })}
                                         initial="hidden"
                                         whileInView="show"
-                                        className='h-16 w-16 rounded-full bg-gray-100 flex items-center justify-center'>
-                                        <img src={"/icons/" + element.icon} alt="" className='h-9' />
+                                        className='h-16 w-16 rounded-full bg-white shadow flex items-center justify-center'>
+                                            <img src={"/icons/"+element.icon} alt="" className='h-8'/>
                                     </motion.div>
                                     <div className='w-[80%] sm:w-52'>
                                         <p className='text-black font-jost text-xl font-semibold'>{element.description.split(':')[0]} </p>

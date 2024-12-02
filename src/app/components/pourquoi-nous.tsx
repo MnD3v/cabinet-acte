@@ -23,8 +23,9 @@ const PourquoiNous = () => {
                         whileInView="show"
                         viewport={{ once: true }}
                         className=' flex items-center my-4 gap-2 self-start'>
-                        <div className='bg-green-400 h-2 w-9'></div>
-                        <p className=' text-green-400 text-xl uppercase font-jost font-bold self-start'> Pourquoi nous choisir ?</p>
+                        <p className=' text-green-400 text-xl uppercase font-abel font-bold self-start'> Pourquoi nous choisir ?</p>
+                        <div className='bg-green-400 h-px w-9'></div>
+
                     </motion.div>
                     <p className='font-marcellus text-2xl md:text-4xl'>Nous accompagnons chaque etudiant dans l'acquisition des competances
                     </p>

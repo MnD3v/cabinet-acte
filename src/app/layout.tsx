@@ -32,8 +32,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Average+Sans&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
         <link
@@ -50,15 +50,13 @@ export default function RootLayout({
           {children}
         </GlobalStateProvider>
 
-        <footer className="text-white relative flex justify-center bg-[url('/utils/footer.png')] bg-cover p-9 pt-9 md:pt-24 overflow-hidden max-sm:text-sm">
-          <div className="absolute bottom-0 right-0 z-0 ">
-
-          </div>
-          <div className="relative z-10 max flex flex-wrap justify-center gap-9">
+        <footer className="text-white relative flex flex-col items-center bg-[url('/utils/footer.png')] bg-cover overflow-hidden max-sm:text-sm">
+          
+          <div className="relative z-10 max w-full flex flex-wrap  p-4 gap-9">
 
             <div>
               <img src="/white-logo.png" alt="" className="w-12 md:w-16" />
-              <p className="w-80 mt-6">Chez ACTe, nous offrons des formations sur mesure pour améliorer vos compétences et renforcer votre carrière, en alliant tradition et innovation dans des domaines variés.</p>
+              <p className="w-80 mt-6 font-abel">Chez ACTe, nous offrons des formations sur mesure pour améliorer vos compétences et renforcer votre carrière, en alliant tradition et innovation dans des domaines variés.</p>
               <div className=" flex gap-2">
                 {socials.map((element) => (
                   <div key={element.icon} className="bg-white h-10 w-10 rounded-full flex flex-col items-center justify-center">
@@ -82,8 +80,14 @@ export default function RootLayout({
               </div>
             
             </div>
+         
 
           </div>
+          <div className='flex justify-center h-16 items-center w-full bg-gray-500'>
+      <div className='max w-full p-4'>
+      Copyright © $2024 - All right reserved by ACTe
+      </div>
+      </div>
 
         </footer>
       </body>

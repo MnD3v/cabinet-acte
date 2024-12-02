@@ -50,12 +50,13 @@ const Services = () => {
                         initial="hidden"
                         whileInView="show"
                         className='flex  items-center my-4 gap-2'>
-                        <div className='bg-green-700 h-2 w-9'></div>
-                        <p className=' text-green-700 text-xl uppercase font-jost font-bold'> Formations</p>
+
+                        <p className=' text-green-700 text-2xl uppercase font-abel font-bold'> Formations</p>
+                        <div className='bg-green-700 h-px w-9'></div>
                     </motion.div>
                 </div>
 
-                <p className='text-black font-jost text-2xl my-4 mb-6'>Nous offrons des formations dans 5 grands domaines</p>
+                <p className='text-black font-jost mb-6'>Nous offrons des formations dans 5 grands domaines</p>
             </div>
 
 
@@ -72,7 +73,7 @@ const Services = () => {
                             key={element.icon} className='p-1'> <div
 
                                 className=' h-full flex flex-col justify-between
-                          hover:bg-white      border border-gray-300 hover:border-green-600 rounded-2xl
+                          hover:bg-white      border border-gray-300 hover:border-green-600 hover:scale-105 rounded-2xl
                                  p-2 md:p-3 
                                 transition-all duration-200'>
 
@@ -96,7 +97,7 @@ const Services = () => {
                                         className='text-xl text-black font-medium font-jost'>{element.titre}</motion.p>
                                     <p className='text-zinc-600'>{element.description}</p>
                                 </div>
-                                <div className='flex items-center font-jost font-semibold text-green-600 
+                                <div className='flex items-center font-jost font-semibold 
                                 my-4
                          
                                '>Voir les formations <motion.img

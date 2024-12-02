@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
 
 :root {
   --background: #ffffff;
@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  font-family: "Syne", Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {

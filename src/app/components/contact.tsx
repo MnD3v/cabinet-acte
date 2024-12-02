@@ -13,10 +13,10 @@ const Contact = () => {
 
 
             </div>
-            <div className='max-w-[800px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 m-3'>
+            <div className='max grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 m-3'>
                 <div>
                     <div className='flex items-center gap-1'> <div className='h-px bg-zinc-800 w-16'></div> <h3>Retrouvez nous</h3> </div>
-                    <h1 className='font-jost'>Contactez <span className='text-green-500'>Nous</span></h1>
+                    <h1 className='font-abel'>Contactez <span className='text-green-500'>Nous</span></h1>
                     <p>Nous avons des experts en social en direct qui attendent pour vous aider du lundi au vendredi de 7h à 18h</p>
                 </div>
                 {contacts.map((element) => (

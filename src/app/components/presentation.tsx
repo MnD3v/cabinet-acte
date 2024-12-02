@@ -23,14 +23,14 @@ const Presentation = () => {
                                     initial="hidden"
                                     whileInView="show"
                                     className="text-5xl md:text-7xl lg:text-8xl font-semibold
-                                    font-play italic">Cabinet  <span className='text-green-500 font-jost font-bold '>ACTe</span> </motion.h1>
+                                    font-play italic">Cabinet  <span className='text-green-500 font-syne font-bold '>ACTe</span> </motion.h1>
                                 <motion.h2
                                     viewport={{ once: true }}
 
                                     variants={Animations.leftToRight({ duration: 0.5 })}
                                     initial="hidden"
                                     whileInView="show"
-                                    className='font-jost text-2xl md:text-3xl font-semibold my-6'>
+                                    className='font-abel text-2xl md:text-3xl font-semibold my-6'>
                                     Agence de Conseil en Management et Technologie
                                 </motion.h2>
                                 <motion.p
@@ -39,7 +39,7 @@ const Presentation = () => {
                                     variants={Animations.leftToRight({ duration: .7 })}
                                     initial="hidden"
                                     whileInView="show"
-                                    className='text-lg font-bricolage'
+                                    className='text-xl font-abel font-semibold'
                                 >
                                     Expertise comptable, fiscale, RH, marketing et technologie
                                 </motion.p>

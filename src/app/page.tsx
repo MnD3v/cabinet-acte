@@ -10,6 +10,7 @@ import Animations from "./components/utils/item";
 import PourquoiNous from "./components/pourquoi-nous";
 import Equipe from "./components/equipe";
 import Temoignages from "./components/temoignages";
+import FAQ from "./components/faq";
 
 export default function Home() {
   const [isInView, setIsInView] = useState(true);
@@ -24,13 +25,13 @@ export default function Home() {
   }, [])
   return (
     <div
-
+    className="font-syne bg-green-50"
     >
       {
         isInView && <div className='fixed flex flex-col items-center justify-center bg-white h-full w-full'>
           <div>
           </div>
-          <img src="/mini-logo.png" alt="" className="h-14 md:h-24 my-3" />
+          <img src="/logo.png" alt="" className="h-14 md:h-24 my-3" />
           <div className='loader h-9 w-9 md:h-16 md:w-16'></div>
 
         </div>}
@@ -49,6 +50,7 @@ export default function Home() {
 
         <PourquoiNous></PourquoiNous>
         <Temoignages></Temoignages>
+        <FAQ></FAQ>
         <Equipe></Equipe>
         <Contact></Contact>
         {/* <Equipe></Equipe> */}
