@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.cabinetacte.com
+
+# Sitemaps
+Sitemap: https://www.cabinetacte.com/sitemap.xml

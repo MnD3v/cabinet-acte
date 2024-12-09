@@ -17,6 +17,20 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Cabinet ACTe",
   description: "Cabinet de formation des jeunes en management et technologie",
+  openGraph: {
+    type: 'website',
+    url: 'https://www.cabinetacte.com',
+    title: 'Cabinet ACTe | Agence de Conseil en Management et Technologie',
+    description: 'Découvrez le Cabinet ACTe, Agence de Conseil en Management et Technologie, est un cabinet d’expertise en management (comptable, fiscale, markéting et Ressources Humaines) et technologie',
+    images: [
+      {
+        url: 'https://i.ibb.co/RQs8j1F/Group-1-4-1.png',
+        width: 1200,
+        height: 630,
+        alt: 'Cabinet ACTe',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -39,7 +53,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Abel&family=Average+Sans&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
 
         <link
           rel="stylesheet"
