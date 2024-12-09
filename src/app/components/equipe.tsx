@@ -3,7 +3,7 @@ import React from 'react'
 import Animations from './utils/item'
 
 const Equipe = () => {
-    const membres = [{ image: "/equipe/pignandi.png", poste: "Responsable pôle RH", nom: "Dr Géraldine PIGNANDI", note: "4.5" }, { image: "/equipe/luc.png", poste: "Consultant formateur, Stratégie Marketing", nom: "Dr Luc MAGREBE", note: "4.8" }, { image: "/equipe/vice-pdg.png", poste: " Gestionnaire Comptable agrée", nom: "Drt R. Kangni KUEVIAKOE", note: "4.7" },
+    const membres = [{ image: "/equipe/pignandi.png", poste: "Responsable pôle RH", nom: "Géraldine PIGNANDI", note: "4.5" }, { image: "/equipe/luc.png", poste: "Dr, Consultant formateur, Stratégie Marketing", nom: "Luc MAGREBE", note: "4.8" }, { image: "/equipe/vice-pdg.png", poste: "Dr, Gestionnaire Comptable agrée", nom: "Drt R. Kangni KUEVIAKOE", note: "4.7" },
     { image: "/equipe/vice-pdg.png", poste: "Consultant formateur, informaticien", nom: "Justin HOULOUMIE", note: "4.8" }, { image: "/equipe/aubin.png", poste: "Consultant formateur, Graphiste designer", nom: "Aubin KUEVIAKOE", note: "4.7" },
     { image: "/equipe/manu.png", poste: "Consultant formateur, Développeur ", nom: "Emanuel DJATIKA", note: "4.7" },
 
