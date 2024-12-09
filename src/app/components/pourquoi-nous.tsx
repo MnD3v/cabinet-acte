@@ -80,7 +80,7 @@ const PourquoiNous = () => {
                             <motion.img
                                 viewport={{ once: true }}
 
-                                src="/pourquoi.png" alt="" className='relative w-full md:w-[400px] lg:w-[440px] h-full  
+                                src="/pourquoi.jpeg" alt="" className='relative w-full md:w-[400px] lg:w-[440px] h-full  
                         object-cover z-30'
                                 variants={Animations.leftToRight({ duration: 0.5, inverse: true })}
                                 initial="hidden"

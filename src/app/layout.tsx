@@ -31,9 +31,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Average+Sans&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Average+Sans&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
         <link
@@ -51,7 +56,7 @@ export default function RootLayout({
         </GlobalStateProvider>
 
         <footer className="text-white relative flex flex-col items-center bg-[url('/utils/footer.png')] bg-cover overflow-hidden max-sm:text-sm">
-          
+
           <div className="relative z-10 max w-full flex flex-wrap  p-4 gap-9">
 
             <div>
@@ -78,16 +83,16 @@ export default function RootLayout({
                 <img src="/icons/green-map.png" alt="" className="h-6 mx-1 " />
                 <p className="p-3">Notre Siège social est dans le quartier Tomdè, à environ 50 metres après les affaires sociales.</p>
               </div>
-            
+
             </div>
-         
+
 
           </div>
           <div className='flex justify-center h-16 items-center w-full bg-gray-500'>
-      <div className='max w-full p-4'>
-      Copyright © $2024 - All right reserved by ACTe
-      </div>
-      </div>
+            <div className='max w-full p-4'>
+              Copyright © $2024 - All right reserved by ACTe
+            </div>
+          </div>
 
         </footer>
       </body>

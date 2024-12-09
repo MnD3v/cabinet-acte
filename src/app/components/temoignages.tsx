@@ -34,7 +34,7 @@ const Temoignages = () => {
         },
 
         {
-            "image": "tam.png",
+            "image": "carolle.png",
             "description": "Ma formation en parcours expertise comptable au cabinet acte était excellente vue la discipline et la rigueur. J'ai été satisfaite vu que mon objectif a été atteint, la formation était un succès pour moi. Cette formation m'a apporté d'abord l'intégration sociale ensuite les connaissances nécessaires pour mon parcours professionnel. Oui je vais recommander une ou même plusieurs personnes d’aller suivre leur formation au cabinet ACTe.",
             "nom": "TAMASSI Carolle",
             
