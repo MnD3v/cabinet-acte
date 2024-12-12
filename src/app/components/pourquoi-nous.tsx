@@ -27,7 +27,7 @@ const PourquoiNous = () => {
                         <div className='bg-green-400 h-px w-9'></div>
 
                     </motion.div>
-                    <p className='font-marcellus text-2xl md:text-4xl'>Nous accompagnons chaque etudiant dans l'acquisition des competences
+                    <p className='font-marcellus text-2xl md:text-4xl'>Nous accompagnons chaque etudiant dans l'acquisition des compétences
                     </p>
                     <p>Depuis plus de 4ans, nous avons pour vision de former des jeunes dans les métiers de l'avenir. L'insertion professionnelle de nos jeunes est notre principal but</p>
 
