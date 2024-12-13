@@ -1,5 +1,4 @@
 "use client"
-import Services from "./components/services";
 import APropos from "./components/apropos";
 import Presentation from "./components/presentation";
 import Contact from "./components/contact";
@@ -11,6 +10,8 @@ import PourquoiNous from "./components/pourquoi-nous";
 import Equipe from "./components/equipe";
 import Temoignages from "./components/temoignages";
 import FAQ from "./components/faq";
+import Formations from "./components/formations";
+import Services from "./components/services";
 
 export default function Home() {
   const [isInView, setIsInView] = useState(true);
@@ -47,6 +48,7 @@ export default function Home() {
         <Presentation></Presentation>
         <APropos></APropos>
         <Services></Services>
+        <Formations></Formations>
 
         <PourquoiNous></PourquoiNous>
         <Temoignages></Temoignages>

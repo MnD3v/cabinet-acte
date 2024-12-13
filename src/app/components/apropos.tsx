@@ -11,7 +11,8 @@ const APropos = () => {
     ]
     return (
         <section id="a-propos" className='relative flex flex-col  items-center p-3 my-6 overflow-hidden'>
-            <motion.div
+          <div className='max '>
+          <motion.div
                 viewport={{ once: true }}
 
                 variants={Animations.scale({ duration: 0.5, inverse: true })}
@@ -23,15 +24,9 @@ const APropos = () => {
                 <p className=' text-green-700 text-xl uppercase font-abel font-bold self-start'> A propos de nous</p>
                 <div className='bg-green-700 h-px w-9'></div>
             </motion.div>
-            <div className='max flex flex-wrap gap-3'>
-                <motion.img src="/entreprise.jpg" alt=""
-                    viewport={{ once: true }}
 
-                    variants={Animations.leftToRight({ duration: 0.5 })}
-                    initial="hidden"
-                    whileInView="show"
-                    className='object-cover w-full h-[260px] sm:h-[400px] lg:w-[50%] lg:h-auto' />
-                <div className='w-full lg:w-[400px] xl:w-[600px]'>
+            
+                <div className='w-full'>
                     <div className='w-full flex justify-start'>
                         <motion.div
                             viewport={{ once: true }}
@@ -55,7 +50,7 @@ const APropos = () => {
                     '>
                         <span className='font-abel font-black text-green-600 text-3xl'>ACTe</span>, <span className='font-bold'>Agence de Conseil en Management et </span>  <span className='font-bold'>Technologie</span>, est un cabinet d’expertise en management (comptable, fiscale, marketing et Ressources Humaines) et technologie. Le cabinet ACTe est au cœur du renforcement de capacités des jeunes diplômés, en leur offrant des <span className='font-bold '>formations qualifiées</span> et <span className='font-bold '>répondant aux exigences actuelles du marché de l'emploi</span>.  Aussi, il offre une gamme de prestations et de services dédiés aux professionnels, étudiants et aux entreprises. Il intervient auprès des Petites et Moyennes Entreprises (PME) dans les domaines de la <span className='font-bold '>comptabilité , du conseil, de l’audit et dans la mise en place d’outils</span>  de pilotage utiles à une bonne gestion de leur entreprise.
                     </p>
-                    <div className='flex items-center gap-2'>  <h3 className='font-abel font-bold text-green-700 text-2xl duration-[4s]'>
+                    <div className='flex items-center gap-2'>  <h3 className='font-abel font-bold text-green-700 text-2xl duration-[4s] mt-6'>
                             Ce qui nous distingue</h3></div>
                     <div className='flex flex-wrap'>
 
@@ -83,7 +78,7 @@ const APropos = () => {
                                             <img src={"/icons/"+element.icon} alt="" className='h-8'/>
                                     </motion.div>
                                     <div className='w-[80%] sm:w-52'>
-                                        <p className='text-black font-jost text-xl font-semibold'>{element.description.split(':')[0]} </p>
+                                        <p className='text-black font-abel text-xl font-semibold'>{element.description.split(':')[0]} </p>
                                         <p className='text-zinc-600'>{element.description.split(':')[1]}</p>
                                     </div >
 
@@ -94,7 +89,9 @@ const APropos = () => {
                     </div>
 
                 </div>
-            </div>
+
+          </div>
+           
         </section>
     )
 }

@@ -1,8 +1,15 @@
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
+import { Navigation, Pagination } from "swiper/modules";
+import { NavigationOptions } from "swiper/types";
 
 import { motion } from "framer-motion";
 import Animations from "./utils/item";
+import { useRef } from "react";
 
 const Temoignages = () => {
 
@@ -40,89 +47,102 @@ const Temoignages = () => {
             
         }
     ]
+    
 
+    const prevRef = useRef<HTMLDivElement>(null);
+    const nextRef = useRef<HTMLDivElement>(null);
 
     return (
         <div className="relative flex flex-col items-center overflow-hidden">
-            <div className="max p-4 ">
+            <div className="max">
+                <h1 className=' my-6 font-bricolage text-center text-2xl md:text-4xl'>Ce que disent nos <span className="text-green-500">étudiants</span> </h1>
+                <Swiper
 
-
-             
-
-                <h2 className=' my-6 font-abel font-bold text-center text-xl md:text-2xl font-roboto '>Quelques temoignages de nos etudiants </h2>
-                <div
-
-
-                    className=" grid md:grid-cols-2 gap-3  md:gap-9"
+                    modules={[Navigation, Pagination]}  // On spécifie les modules utilisés
+                    slidesPerView={1}
+                    loop={true}
+                    navigation={{
+                        prevEl: prevRef.current,
+                        nextEl: nextRef.current,
+                    }}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    onBeforeInit={(swiper) => {
+                        // Vérifie que swiper.params.navigation est un objet (non juste "true")
+                        if (typeof swiper.params.navigation === 'object') {
+                            // On "cast" (coerce) pour dire à TypeScript que c'est un objet avec des propriétés
+                            (swiper.params.navigation as NavigationOptions).prevEl = prevRef.current;
+                            (swiper.params.navigation as NavigationOptions).nextEl = nextRef.current;
+                        }
+                        swiper.navigation.init();
+                        swiper.navigation.update();
+                    }}
+                    className=""
                 >
                     {
                         commentaires.map((element) => (
+                            <SwiperSlide
+                                key={element.image}
+                                className="cursor-pointer">
+                                <div className='flex flex-col items-center sm:flex-row justify-center gap-6 pb-10'>
 
-
-                            <div
-                                key={element.description}
-                                className="p-3 md:p-4 border hover:border-e_orange hover:scale-95 ring-1 ring-offset-1 ring-gray-300 hover:ring-e_orange">
-                                <motion.div
-                                    variants={Animations.leftToRight({ duration: 0.4 })}
-                                    initial="hidden"
-                                    whileInView="show"
-                                    viewport={{ once: true }}
-
-                                    className=""
-                                >
-                                    <img src="/icons/quote.png" alt=""
-
-                                        className='h-10 opacity-20 ' />
-                                </motion.div>
-                                <div className="flex gap-2 items-center">
-                                    <img src={"/students/"+element.image} alt="" className="h-24"/>
-                          
-                             <motion.h2
-                                    variants={Animations.leftToRight({ duration: 0.4,inverse:true })}
-                                    initial="hidden"
-                                    whileInView="show"
-                                    viewport={{ once: true }}
-                                    className='font-semibold text-xl font-roboto text-e_orange pt-4' >{element.nom}</motion.h2>
-                        
-                        
-                                </div>
-                                <motion.p
-                                    variants={Animations.scale({ duration: .6 })}
-                                    initial="hidden"
-                                    whileInView="show"
-                                    viewport={{ once: true }}
-                                    className='  '>{element.description}</motion.p>
-                        
-                                <div className="w-full flex justify-end">
-                                    <motion.div
-                                        variants={Animations.bottomToTop({ duration: 0.4 })}
+                                    <motion.img src={"/students/" + element.image} alt=""
+                                        variants={Animations.scale({ duration: 0.3 })}
                                         initial="hidden"
                                         whileInView="show"
-                                        viewport={{ once: true }}
-                                        className="self-end"
-                                    >
-                                        <img src="/icons/quote.png" alt=""
+                                        className='h-36 self-center' />
 
-                                            className='h-10 opacity-20 rotate-180 ' />
-                                    </motion.div>
+                                    <div className='flex flex-col w-[600px] max-w-[85vw]'>
+                                        <motion.div
+                                            variants={Animations.leftToRight({ duration: 0.4 })}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            className=""
+                                        >
+                                            <img src="/icons/quote.png" alt=""
 
+                                                className='h-10 opacity-20 ' />
+                                        </motion.div>
+                                        <motion.p
+                                            variants={Animations.opacity({ duration: 1.2 })}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            className='text-lg'>{element.description}</motion.p>
+                                        <motion.div
+                                            variants={Animations.bottomToTop({ duration: 0.4 })}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            className="self-end"
+                                        >
+                                            <img src="/icons/quote.png" alt=""
+
+                                                className='h-10 opacity-20 rotate-180 ' />
+                                        </motion.div>
+
+
+                                        <motion.h2
+                                            variants={Animations.leftToRight({ duration: 0.4, })}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            className='font-black font-bricolage'>{element.nom}</motion.h2>
+                                    
+                                    </div>
                                 </div>
-
-
-
-
-
-
-                            </div>
+                            </SwiperSlide>
                         ))
                     }
 
 
-                </div >
+                </Swiper >
             </div >
 
 
-
+            {/* Boutons de navigation */}
+            <div className="flex gap-2 justify-center my-6" >
+                <div ref={prevRef} className="flex items-center justify-center h-8 w-12 rounded-full border shadow-md bg-zinc-400 cursor-pointer"> <img src="/icons/arrow-go.png" alt="" className="h-5 rotate-180 " /></div>
+                <div ref={nextRef} className="flex items-center justify-center h-8 w-12 rounded-full border shadow-md bg-zinc-400 cursor-pointer"> <img src="/icons/arrow-go.png" alt="" className="h-5" /></div>
+            </div>
 
 
         </div >

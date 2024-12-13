@@ -53,6 +53,7 @@ const FixedAppBar = ({ fixed }: { fixed?: boolean }) => {
                 </button>
                 <ul className={`hidden md:flex items-center justify-center uppercase`}>
                     <li className="hover:text-green-600 font-semibold border-l-[1px] border-white/30 pl-9 py-3"><a href={inNotHome ? "/" : "#"}>Accueil</a></li>
+                    <li className="hover:text-green-600 font-semibold  pl-9 py-3"><a href={inNotHome ? "/" : "#services"}>Services</a></li>
                     <li className="hover:text-green-600 font-semibold border-l-[1px] border-white/30 pl-9 py-3"><a href={inNotHome ? "/" : "#formations"}>Formations</a></li>
 
                     <li className="hover:text-green-600 font-semibold border-l-[1px] border-white/30 pl-9 py-3"><a href={inNotHome ? "/" : "#a-propos"}>A Propos</a></li>
